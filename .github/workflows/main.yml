@@ -1,0 +1,31 @@
+# name属性用来指定这个工作流的名字
+name: Download The SUBSCRIBE
+
+on:
+  push:
+    branches:
+      - main
+  schedule:   
+    - cron: '0 * * * *'   #国际标准时间，北京时间+8，即下午1点钟
+
+
+
+jobs:
+  run-csjs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@main  #采用main分支下的
+      - name: Download the subscribe
+        run: |
+          sh ./run.sh
+      - name: Commit Changes
+        run: |
+         git config --global user.email flik@92coco.cn
+         git config --global user.name Flik
+         git add .
+         git commit -m"由github actions推送,日期:`date`"
+         git pull --rebase
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+         github_token: ${{ secrets.GITHUB_TOKEN }}
