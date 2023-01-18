@@ -28,17 +28,4 @@ jobs:
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
-         github_token: ${{ secrets.GITHUB_TOKEN }}
-      - name: GitHub Push
-        # You may pin to the exact commit or the version.
-        # uses: ad-m/github-push-action@40bf560936a8022e68a3c00e7d2abefaf01305a6
-        uses: ad-m/github-push-action@v0.6.0
-        with:
-          # Token for the repo. Can be passed in using $\{{ secrets.GITHUB_TOKEN }}
-          github_token: $\{{ secrets.GITHUB_TOKEN }}
-          # Repository name to push. Default or empty value represents current github repository (${GITHUB_REPOSITORY})
-          repository: ${GITHUB_REPOSITORY}
-          branch: master
-          force: true
-          tags: true
-          directory: .
+         github_token: $\{{ secrets.GITHUB_TOKEN }}
