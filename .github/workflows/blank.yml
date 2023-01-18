@@ -26,6 +26,7 @@ jobs:
          git commit -m"由github actions推送,日期:`date`"
          git pull --rebase
       - name: Push changes
-        uses: ad-m/github-push-action@master
+        uses: ad-m/github-push-action@main
         with:
          github_token: $\{{ secrets.GITHUB_TOKEN }}
+         github_url: https://github.com/a2470982985/getNode.git
