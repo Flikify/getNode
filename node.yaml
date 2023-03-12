@@ -5,121 +5,134 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: NOWHERE-0.0.0.0-000, server: 2233Cloud, port: 443, type: trojan, password: cc213f14-07dd-36fa-b032-ab7dcbf69ef1, sni: 2233Cloud, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-002, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-004, server: gzdx.jcnode.top, port: 20002, type: trojan, password: c0bb354e-af42-4170-ad84-9ebc80cf534f, sni: hk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-005, server: gzdx.jcnode.top, port: 20003, type: trojan, password: c0bb354e-af42-4170-ad84-9ebc80cf534f, sni: hk02.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-006, server: gzdx.jcnode.top, port: 20000, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-36.134.111.30-008, server: shcm.donghui.tech, port: 54692, type: trojan, password: c0bb354e-af42-4170-ad84-9ebc80cf534f, sni: uk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-125.88.210.172-009, server: gddxd.fosi.hk, port: 44226, type: trojan, password: c0bb354e-af42-4170-ad84-9ebc80cf534f, sni: uk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-211.140.157.183-010, server: zj.xueshao.top, port: 27706, type: trojan, password: c0bb354e-af42-4170-ad84-9ebc80cf534f, sni: jp02.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-183.240.23.235-011, server: gy.xueshao.top, port: 36265, type: trojan, password: c0bb354e-af42-4170-ad84-9ebc80cf534f, sni: jp02.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-111.22.122.189-012, server: cs.xueshao.top, port: 20572, type: trojan, password: c0bb354e-af42-4170-ad84-9ebc80cf534f, sni: jp03.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-125.88.210.172-013, server: gddxd.fosi.hk, port: 63211, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gddxd.fosi.hk}}}
-  - {name: 🇨🇳 CN-211.140.157.183-014, server: zj.xueshao.top, port: 46625, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zj.xueshao.top}}}
-  - {name: 🇨🇳 CN-14.29.242.116-015, server: gddx.fosi.hk, port: 35024, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gddx.fosi.hk}}}
-  - {name: 🇨🇳 CN-14.18.81.201-016, server: gzdx.jcnode.top, port: 23000, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-017, server: gzdx.jcnode.top, port: 23001, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-018, server: gzdx.jcnode.top, port: 23002, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-111.22.122.189-019, server: cs.xueshao.top, port: 22244, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cs.xueshao.top}}}
-  - {name: 🇨🇳 CN-113.56.214.51-020, server: cscu.xn--dlq110j6ul.cc, port: 35555, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cscu.xn--dlq110j6ul.cc}}}
-  - {name: 🇨🇳 CN-14.18.81.201-021, server: gzdx.jcnode.top, port: 28002, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.83.33-022, server: gyiepl.1aba.cn, port: 17834, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gyiepl.1aba.cn}}}
-  - {name: 🇨🇳 CN-113.56.214.51-023, server: cscu.xn--dlq110j6ul.cc, port: 33346, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cscu.xn--dlq110j6ul.cc}}}
-  - {name: 🇨🇳 CN-27.150.174.128-024, server: shct.xn--dlq110j6ul.cc, port: 48640, type: vmess, uuid: c0bb354e-af42-4170-ad84-9ebc80cf534f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shct.xn--dlq110j6ul.cc}}}
-  - {name: 🇨🇳 CN-14.18.81.201-025, server: gzdx0.170203.xyz, port: 14515, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: ru04.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-026, server: gzdx0.170203.xyz, port: 53523, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: ru03.170203.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 SG-52.77.208.127-027, server: sg0001.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sg0001.170203.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 SG-18.139.225.91-028, server: sg02.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sg03.170203.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 SG-54.169.106.234-029, server: sg03.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sg03.170203.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 SG-54.151.208.138-030, server: sg001.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sg001.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-031, server: gzdx0.170203.xyz, port: 24800, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: usmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-032, server: gzdx0.170203.xyz, port: 61473, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: usmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-033, server: gzdx0.170203.xyz, port: 54941, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: jp01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-034, server: gzdx0.170203.xyz, port: 22457, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: jpmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-035, server: gzdx0.170203.xyz, port: 48669, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sgmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-036, server: gzdx0.170203.xyz, port: 33923, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: 0a01f3ad01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-037, server: gzdx0.170203.xyz, port: 55716, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: tw01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇺🇸 US-35.173.137.234-038, server: us02.170203.xyz, port: 43543, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us02.170203.xyz}}}
-  - {name: 🇸🇬 SG-13.229.225.70-039, server: sg003.170203.xyz, port: 34333, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg003.170203.xyz}}}
-  - {name: 🇸🇬 SG-13.229.59.100-040, server: sg06.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sg06.170203.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 SG-54.251.129.153-041, server: sg04.170203.xyz, port: 43543, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg04.170203.xyz}}}
-  - {name: 🇸🇬 SG-18.141.158.67-042, server: sg05.170203.xyz, port: 43543, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg05.170203.xyz}}}
-  - {name: 🇨🇳 CN-14.18.81.201-043, server: gzdx0.170203.xyz, port: 59532, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sgmax05.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-044, server: gzdx0.170203.xyz, port: 64128, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: 0a01f3ad01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-045, server: gzdx0.170203.xyz, port: 64736, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sgmax04.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-046, server: gzdx0.170203.xyz, port: 27539, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sgmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-047, server: gzdx0.170203.xyz, port: 40125, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: sgmax08.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-048, server: gzdx0.170203.xyz, port: 28309, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: ru03.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-049, server: gzdx0.170203.xyz, port: 10290, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: tw01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-050, server: gzdx0.170203.xyz, port: 10244, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: uk01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇰🇷 KR-43.200.253.114-051, server: kr02.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: kr02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 JP-54.238.231.27-052, server: jp02.170203.xyz, port: 23245, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}}
-  - {name: 🇨🇳 CN-14.18.81.201-053, server: gzdx0.170203.xyz, port: 47154, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx0.170203.xyz}}}
-  - {name: 🇯🇵 JP-52.192.58.50-054, server: jp03.170203.xyz, port: 23245, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp03.170203.xyz}}}
-  - {name: 🇯🇵 JP-18.183.85.86-055, server: jp05.170203.xyz, port: 23245, type: vmess, uuid: b518d30d-43e5-4132-bbb0-0b89bb3376b5, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp05.170203.xyz}}}
-  - {name: 🇨🇳 CN-14.18.81.201-056, server: gzdx0.170203.xyz, port: 47475, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: jpmax04.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-057, server: gzdx0.170203.xyz, port: 64617, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: jp01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 JP-13.115.230.123-058, server: jpmax05.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: jpmax05.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-059, server: gzdx0.170203.xyz, port: 60383, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: usmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-060, server: gzdx0.170203.xyz, port: 39129, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: usmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇯🇵 JP-43.207.68.127-061, server: gzdx1.170203.xyz, port: 27528, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: usmax040.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-062, server: gzdx0.170203.xyz, port: 54506, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax08.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-063, server: gzdx0.170203.xyz, port: 57012, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-064, server: gzdx0.170203.xyz, port: 37400, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax02.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-065, server: gzdx0.170203.xyz, port: 19744, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax07.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-066, server: gzdx0.170203.xyz, port: 27825, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax03.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-067, server: gzdx0.170203.xyz, port: 13301, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax06.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-068, server: gzdx0.170203.xyz, port: 40611, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax06.170203.xyz, skip-cert-verify: false}
-  - {name: 🇸🇬 SG-18.143.168.100-069, server: hkmax01.170203.xyz, port: 443, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-070, server: gzdx0.170203.xyz, port: 14101, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-071, server: gzdx0.170203.xyz, port: 37250, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax08.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-072, server: gzdx0.170203.xyz, port: 51953, type: trojan, password: b518d30d-43e5-4132-bbb0-0b89bb3376b5, sni: hkmax01.170203.xyz, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-183.240.23.235-073, server: gy.xueshao.top, port: 13945, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: hk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-074, server: gzdx.jcnode.top, port: 40000, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: hk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.56.48-075, server: hncu.donghui.tech, port: 13987, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: hk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-076, server: gzdx.jcnode.top, port: 40001, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: hk02.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.56.48-077, server: hncu.donghui.tech, port: 42486, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: hk02.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.83.77-078, server: ydgy.fosi.hk, port: 51933, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: hk02.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-079, server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 20580d05-28fc-47ba-8b3f-40150458f323}
-  - {name: 🇨🇳 CN-120.232.56.48-080, server: hncu.donghui.tech, port: 61561, type: ss, cipher: aes-256-gcm, password: 20580d05-28fc-47ba-8b3f-40150458f323}
-  - {name: 🇨🇳 CN-14.18.81.201-081, server: gzdx.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: 20580d05-28fc-47ba-8b3f-40150458f323}
-  - {name: 🇨🇳 CN-120.232.56.48-082, server: hncu.donghui.tech, port: 55785, type: ss, cipher: aes-256-gcm, password: 20580d05-28fc-47ba-8b3f-40150458f323}
-  - {name: 🇨🇳 CN-14.18.81.201-083, server: gzdx.jcnode.top, port: 41000, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: jp03.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-084, server: gzdx.jcnode.top, port: 41003, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: jp01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-183.245.149.73-085, server: hncub.donghui.tech, port: 16188, type: vmess, uuid: 20580d05-28fc-47ba-8b3f-40150458f323, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: hncub.donghui.tech}}}
-  - {name: 🇨🇳 CN-14.18.81.201-086, server: gzdx.jcnode.top, port: 42000, type: vmess, uuid: 20580d05-28fc-47ba-8b3f-40150458f323, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.232.56.48-087, server: hncu.donghui.tech, port: 63314, type: vmess, uuid: 20580d05-28fc-47ba-8b3f-40150458f323, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: hncu.donghui.tech}}}
-  - {name: 🇨🇳 CN-14.18.81.201-088, server: gzdx.jcnode.top, port: 43000, type: vmess, uuid: 20580d05-28fc-47ba-8b3f-40150458f323, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.232.56.48-089, server: hncu.donghui.tech, port: 49761, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: sg01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-090, server: gzdx.jcnode.top, port: 43002, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: sg01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-091, server: gzdx.jcnode.top, port: 48000, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: us2.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-092, server: gzdx.jcnode.top, port: 48002, type: vmess, uuid: 20580d05-28fc-47ba-8b3f-40150458f323, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-42.81.163.2-093, server: bbjcu.donghui.tech, port: 15586, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: uk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-094, server: gzdx.jcnode.top, port: 47000, type: trojan, password: 20580d05-28fc-47ba-8b3f-40150458f323, sni: uk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-095, server: gzdx.jcnode.top, port: 49000, type: vmess, uuid: 20580d05-28fc-47ba-8b3f-40150458f323, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-36.134.111.30-096, server: shcm.donghui.tech, port: 50916, type: vmess, uuid: 20580d05-28fc-47ba-8b3f-40150458f323, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcm.donghui.tech}}}
-  - {name: 🇨🇳 CN-60.12.127.198-097, server: scloud56.jafiyun.world, port: 22056, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud56.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-098, server: scloud57.jafiyun.world, port: 22057, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud57.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-099, server: scloud58.jafiyun.world, port: 22058, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud58.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-100, server: scloud59.jafiyun.world, port: 22059, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud59.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-101, server: scloud60.jafiyun.world, port: 22060, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud60.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.140.246-102, server: scloud41.jafiyun.world, port: 22041, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud41.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.140.246-103, server: scloud42.jafiyun.world, port: 22042, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud42.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.140.246-104, server: scloud43.jafiyun.world, port: 22043, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud43.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-105, server: scloud52.jafiyun.world, port: 22052, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud52.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-106, server: scloud53.jafiyun.world, port: 22053, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud53.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-107, server: scloud54.jafiyun.world, port: 22054, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud54.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-108, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud29.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-109, server: scloud15.jafiyun.world, port: 22015, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud15.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-110, server: scloud16.jafiyun.world, port: 22016, type: trojan, password: d9ff448d-6189-347b-b54b-39bbb2763b1d, sni: scloud16.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-160, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: 75e49f35-e32e-44e2-b477-9d70b1f711e2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-36.134.111.30-243, server: shcm.donghui.tech, port: 50916, type: vmess, uuid: 7a9850a6-9054-4450-9e38-bb5d1c5cd52a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcm.donghui.tech}}}
-  - {name: 🇭🇰 HK-43.198.89.243-244, server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, port: 80, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win}}}
-  - {name: 🇭🇰 HK-18.163.196.10-245, server: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win, port: 443, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win}}}
-  - {name: 🇨🇳 CN-14.18.81.201-294, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: 87007a95-57ff-4101-bf52-92850d222bf9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: NOWHERE-0.0.0.0-317, server: 2233Cloud, port: 443, type: trojan, password: 7c3788a6-e722-399b-bd66-4e69f7c60713, sni: 2233Cloud, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-14.18.81.201-413, server: gzdx0.170203.xyz, port: 51953, type: trojan, password: 0bb72766-b563-4ca3-b311-36de38b1edd8, sni: hkmax01.170203.xyz, skip-cert-verify: false}
+  - {name: RELAY-104.21.88.192-000, server: yujiasu.net, port: 5000, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 33917:2pygKSsPUjIoMnyc, obfs-param: e6a8d33917.microsoft.com}
+  - {name: RELAY-172.67.134.254-001, server: yujiasu.app, port: 5000, type: ssr, cipher: chacha20-ietf, password: lbNVOz, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 33917:2pygKSsPUjIoMnyc, obfs-param: e6a8d33917.microsoft.com}
+  - {name: NOWHERE-0.0.0.0-002, server: t.me/yjsserver, port: 13098, type: ssr, cipher: chacha20-ietf, password: 2pygKSsPUjIoMnyc, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: RELAY-172.67.81.238-003, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Seattle.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Seattle.kotick.site}}}
+  - {name: RELAY-104.24.177.7-004, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Lille.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Lille.kotick.site}}}
+  - {name: RELAY-104.24.176.7-005, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Kansas.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Kansas.kotick.site}}}
+  - {name: RELAY-172.67.81.238-006, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Amsterdam.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Amsterdam.kotick.site}}}
+  - {name: RELAY-172.67.81.238-007, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Paris.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Paris.kotick.site}}}
+  - {name: RELAY-104.24.176.7-008, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Dusseldorf.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Dusseldorf.kotick.site}}}
+  - {name: RELAY-172.67.81.238-009, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Riga.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Riga.kotick.site}}}
+  - {name: RELAY-172.67.81.238-010, server: cdnjs.com, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, servername: Tokyo.kotick.site, network: ws, ws-opts: {path: /speedtest, headers: {Host: Tokyo.kotick.site}}}
+  - {name: 🇨🇳 CN-14.18.81.201-011, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-013, server: gzdx.jcnode.top, port: 20002, type: trojan, password: 7591c249-5c53-442c-a026-fde992125198, sni: hk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-014, server: gzdx.jcnode.top, port: 20003, type: trojan, password: 7591c249-5c53-442c-a026-fde992125198, sni: hk02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-015, server: gzdx.jcnode.top, port: 20000, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-36.134.111.30-017, server: shcm.donghui.tech, port: 54692, type: trojan, password: 7591c249-5c53-442c-a026-fde992125198, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-125.88.210.172-018, server: gddxd.fosi.hk, port: 44226, type: trojan, password: 7591c249-5c53-442c-a026-fde992125198, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-211.140.157.183-019, server: zj.xueshao.top, port: 27706, type: trojan, password: 7591c249-5c53-442c-a026-fde992125198, sni: jp02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-183.240.23.235-020, server: gy.xueshao.top, port: 36265, type: trojan, password: 7591c249-5c53-442c-a026-fde992125198, sni: jp02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-111.22.122.189-021, server: cs.xueshao.top, port: 20572, type: trojan, password: 7591c249-5c53-442c-a026-fde992125198, sni: jp03.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-125.88.210.172-022, server: gddxd.fosi.hk, port: 63211, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gddxd.fosi.hk}}}
+  - {name: 🇨🇳 CN-211.140.157.183-023, server: zj.xueshao.top, port: 46625, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: zj.xueshao.top}}}
+  - {name: 🇨🇳 CN-14.29.242.116-024, server: gddx.fosi.hk, port: 35024, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gddx.fosi.hk}}}
+  - {name: 🇨🇳 CN-14.18.81.201-025, server: gzdx.jcnode.top, port: 23000, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-026, server: gzdx.jcnode.top, port: 23001, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-027, server: gzdx.jcnode.top, port: 23002, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-111.22.122.189-028, server: cs.xueshao.top, port: 22244, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cs.xueshao.top}}}
+  - {name: 🇨🇳 CN-113.56.214.51-029, server: cscu.xn--dlq110j6ul.cc, port: 35555, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cscu.xn--dlq110j6ul.cc}}}
+  - {name: 🇨🇳 CN-14.18.81.201-030, server: gzdx.jcnode.top, port: 28002, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.83.33-031, server: gyiepl.1aba.cn, port: 17834, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gyiepl.1aba.cn}}}
+  - {name: 🇨🇳 CN-113.56.214.51-032, server: cscu.xn--dlq110j6ul.cc, port: 33346, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: cscu.xn--dlq110j6ul.cc}}}
+  - {name: 🇨🇳 CN-27.150.174.128-033, server: shct.xn--dlq110j6ul.cc, port: 48640, type: vmess, uuid: 7591c249-5c53-442c-a026-fde992125198, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: shct.xn--dlq110j6ul.cc}}}
+  - {name: NOWHERE-0.0.0.0-034, server: 2233Cloud, port: 443, type: trojan, password: d0cd1a7f-c55c-3f46-b590-83935e476a0f, sni: 2233Cloud, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-036, server: gzdx0.170203.xyz, port: 14515, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: ru04.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-037, server: gzdx0.170203.xyz, port: 53523, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: ru03.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 SG-52.77.208.127-038, server: sg0001.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sg0001.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 SG-18.139.225.91-039, server: sg02.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sg02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 SG-54.169.106.234-040, server: sg03.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sg03.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 SG-54.151.208.138-041, server: sg001.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sg001.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-042, server: gzdx0.170203.xyz, port: 24800, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: usmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-043, server: gzdx0.170203.xyz, port: 61473, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: usmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-044, server: gzdx0.170203.xyz, port: 54941, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: jp01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-045, server: gzdx0.170203.xyz, port: 22457, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: jpmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-046, server: gzdx0.170203.xyz, port: 48669, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sgmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-047, server: gzdx0.170203.xyz, port: 33923, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: 0a01f3ad01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-048, server: gzdx0.170203.xyz, port: 55716, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: tw01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇺🇸 US-35.173.137.234-049, server: us02.170203.xyz, port: 43543, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: us02.170203.xyz}}}
+  - {name: 🇸🇬 SG-13.229.225.70-050, server: sg003.170203.xyz, port: 34333, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg003.170203.xyz}}}
+  - {name: 🇸🇬 SG-13.229.59.100-051, server: sg06.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sg06.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 SG-54.251.129.153-052, server: sg04.170203.xyz, port: 43543, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg04.170203.xyz}}}
+  - {name: 🇸🇬 SG-18.141.158.67-053, server: sg05.170203.xyz, port: 43543, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sg05.170203.xyz}}}
+  - {name: 🇨🇳 CN-14.18.81.201-054, server: gzdx0.170203.xyz, port: 59532, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sgmax05.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-055, server: gzdx0.170203.xyz, port: 64128, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: 0a01f3ad01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-056, server: gzdx0.170203.xyz, port: 64736, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sgmax04.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-057, server: gzdx0.170203.xyz, port: 27539, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sgmax01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-058, server: gzdx0.170203.xyz, port: 40125, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: sgmax08.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-059, server: gzdx0.170203.xyz, port: 28309, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: ru03.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-060, server: gzdx0.170203.xyz, port: 10290, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: tw01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-061, server: gzdx0.170203.xyz, port: 10244, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: uk01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇰🇷 KR-43.200.253.114-062, server: kr02.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: kr02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 JP-54.238.231.27-063, server: jp02.170203.xyz, port: 23245, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp02.170203.xyz}}}
+  - {name: 🇨🇳 CN-14.18.81.201-064, server: gzdx0.170203.xyz, port: 47154, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx0.170203.xyz}}}
+  - {name: 🇯🇵 JP-52.192.58.50-065, server: jp03.170203.xyz, port: 23245, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp03.170203.xyz}}}
+  - {name: 🇯🇵 JP-18.183.85.86-066, server: jp05.170203.xyz, port: 23245, type: vmess, uuid: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jp05.170203.xyz}}}
+  - {name: 🇨🇳 CN-14.18.81.201-067, server: gzdx0.170203.xyz, port: 47475, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: jpmax04.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-068, server: gzdx0.170203.xyz, port: 64617, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: jp01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 JP-13.115.230.123-069, server: jpmax05.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: jpmax05.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-070, server: gzdx0.170203.xyz, port: 60383, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: usmax01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-071, server: gzdx0.170203.xyz, port: 39129, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: usmax01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇯🇵 JP-43.207.68.127-072, server: gzdx1.170203.xyz, port: 27528, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: usmax040.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-073, server: gzdx0.170203.xyz, port: 54506, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax08.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-074, server: gzdx0.170203.xyz, port: 57012, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-075, server: gzdx0.170203.xyz, port: 37400, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax02.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-076, server: gzdx0.170203.xyz, port: 19744, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax07.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-077, server: gzdx0.170203.xyz, port: 27825, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax03.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-078, server: gzdx0.170203.xyz, port: 13301, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax06.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-079, server: gzdx0.170203.xyz, port: 40611, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax06.170203.xyz, skip-cert-verify: false}
+  - {name: 🇸🇬 SG-18.143.168.100-080, server: hkmax01.170203.xyz, port: 443, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-081, server: gzdx0.170203.xyz, port: 14101, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-082, server: gzdx0.170203.xyz, port: 37250, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax08.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-083, server: gzdx0.170203.xyz, port: 51953, type: trojan, password: fcbb0719-95fd-4170-aa05-195eb0fc9b1d, sni: hkmax01.170203.xyz, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-132, server: scloud56.jafiyun.world, port: 22056, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud56.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-133, server: scloud57.jafiyun.world, port: 22057, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud57.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-134, server: scloud58.jafiyun.world, port: 22058, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud58.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-135, server: scloud59.jafiyun.world, port: 22059, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud59.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-136, server: scloud60.jafiyun.world, port: 22060, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud60.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.140.246-137, server: scloud41.jafiyun.world, port: 22041, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud41.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.140.246-138, server: scloud42.jafiyun.world, port: 22042, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud42.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.140.246-139, server: scloud43.jafiyun.world, port: 22043, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud43.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-140, server: scloud52.jafiyun.world, port: 22052, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud52.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-141, server: scloud53.jafiyun.world, port: 22053, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud53.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-142, server: scloud54.jafiyun.world, port: 22054, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud54.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-143, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud29.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-144, server: scloud15.jafiyun.world, port: 22015, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud15.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-145, server: scloud16.jafiyun.world, port: 22016, type: trojan, password: 9fc1a4e2-b734-3825-8e8d-c70bcc88e657, sni: scloud16.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-183.240.23.235-146, server: gy.xueshao.top, port: 13945, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: hk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-147, server: gzdx.jcnode.top, port: 40000, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: hk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.56.48-148, server: hncu.donghui.tech, port: 13987, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: hk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-149, server: gzdx.jcnode.top, port: 40001, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: hk02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.56.48-150, server: hncu.donghui.tech, port: 42486, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: hk02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.83.77-151, server: ydgy.fosi.hk, port: 51933, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: hk02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-152, server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682}
+  - {name: 🇨🇳 CN-120.232.56.48-153, server: hncu.donghui.tech, port: 61561, type: ss, cipher: aes-256-gcm, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682}
+  - {name: 🇨🇳 CN-14.18.81.201-154, server: gzdx.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682}
+  - {name: 🇨🇳 CN-120.232.56.48-155, server: hncu.donghui.tech, port: 55785, type: ss, cipher: aes-256-gcm, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682}
+  - {name: 🇨🇳 CN-14.18.81.201-156, server: gzdx.jcnode.top, port: 41000, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: jp03.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-157, server: gzdx.jcnode.top, port: 41003, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: jp01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-183.245.149.73-158, server: hncub.donghui.tech, port: 16188, type: vmess, uuid: c1b14795-8fad-4c75-b1fb-70f47a6ec682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: hncub.donghui.tech}}}
+  - {name: 🇨🇳 CN-14.18.81.201-159, server: gzdx.jcnode.top, port: 42000, type: vmess, uuid: c1b14795-8fad-4c75-b1fb-70f47a6ec682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-120.232.56.48-160, server: hncu.donghui.tech, port: 63314, type: vmess, uuid: c1b14795-8fad-4c75-b1fb-70f47a6ec682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: hncu.donghui.tech}}}
+  - {name: 🇨🇳 CN-14.18.81.201-161, server: gzdx.jcnode.top, port: 43000, type: vmess, uuid: c1b14795-8fad-4c75-b1fb-70f47a6ec682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-120.232.56.48-162, server: hncu.donghui.tech, port: 49761, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: sg01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-163, server: gzdx.jcnode.top, port: 43002, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: sg01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-164, server: gzdx.jcnode.top, port: 48000, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: us2.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-165, server: gzdx.jcnode.top, port: 48002, type: vmess, uuid: c1b14795-8fad-4c75-b1fb-70f47a6ec682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-42.81.163.2-166, server: bbjcu.donghui.tech, port: 15586, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-167, server: gzdx.jcnode.top, port: 47000, type: trojan, password: c1b14795-8fad-4c75-b1fb-70f47a6ec682, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-168, server: gzdx.jcnode.top, port: 49000, type: vmess, uuid: c1b14795-8fad-4c75-b1fb-70f47a6ec682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-36.134.111.30-169, server: shcm.donghui.tech, port: 50916, type: vmess, uuid: c1b14795-8fad-4c75-b1fb-70f47a6ec682, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: shcm.donghui.tech}}}
+  - {name: NOWHERE-0.0.0.0-195, server: 2233Cloud, port: 443, type: trojan, password: d9438b5b-9e1f-329e-ab67-e75fd2583de3, sni: 2233Cloud, skip-cert-verify: false}
+  - {name: RELAY-104.21.79.181-196, server: chaoxi.cool, port: 2000, type: ssr, cipher: chacha20-ietf, password: cxssr911, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 56301:tHgVJRwTZAGENjUg, obfs-param: 0f6fd56301.microsoft.com}
+  - {name: RELAY-172.67.203.203-197, server: chaoxi.info, port: 2000, type: ssr, cipher: chacha20-ietf, password: cxssr911, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 56301:tHgVJRwTZAGENjUg, obfs-param: 0f6fd56301.microsoft.com}
+  - {name: NOWHERE-0.0.0.0-198, server: t.me/cxserver, port: 2000, type: ssr, cipher: chacha20-ietf, password: cxssr911, protocol: auth_aes128_md5, obfs: http_simple, protocol-param: 56301:tHgVJRwTZAGENjUg, obfs-param: 0f6fd56301.microsoft.com}
+  - {name: 🇭🇰 HK-43.198.89.243-271, server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, port: 80, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win}}}
+  - {name: 🇭🇰 HK-18.163.196.10-272, server: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win, port: 443, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win}}}
+  - {name: 🇨🇳 CN-14.18.81.201-274, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: 96e2217a-ce81-4190-8b06-8c221ad26a6e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-320, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: 4b879f98-c565-4984-9a5b-83e708db592a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: NOWHERE-0.0.0.0-433, server: t.me/yjsserver, port: 59810, type: ssr, cipher: chacha20-ietf, password: CCJHg8MMrEvCBUSl, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: "", obfs-param: ""}
   - {name: 🇰🇷 _KR_韩国_1, server: 13.125.72.197, port: 43632, type: vmess, uuid: 18f49289-9ee1-439a-bbaa-dbb59172c42e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 _TW_台湾_1, server: 34.81.61.24, port: 43632, type: vmess, uuid: 18f49289-9ee1-439a-bbaa-dbb59172c42e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 _US_美国_1, server: 167.88.63.79, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
@@ -177,22 +190,20 @@ proxies:
   - {name: 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443, server: 52.196.166.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 新加坡-0-0-ss-18.143.137.38:443, server: 18.143.137.38, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443, server: 43.201.48.212, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443, server: 54.203.94.5, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443, server: 43.207.66.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443, server: 43.206.194.133, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 新加坡-0-0-ss-18.141.181.186:443, server: 18.141.181.186, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443, server: 43.200.244.234, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443, server: 43.207.225.151, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443, server: 3.34.40.140, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 新加坡-0-0-ss-54.169.144.122:443, server: 54.169.144.122, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443, server: 13.215.154.95, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 新加坡-0-0-ss-18.141.224.98:443, server: 18.141.224.98, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443, server: 43.207.166.104, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443, server: 3.35.214.81, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 中国-北京-北京-v2ray-47.93.231.218:53022, server: 47.93.231.218, port: 53022, type: vmess, uuid: 95fd7642-2160-4528-e909-3d526b533013, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083, server: v2ray3.ibgfw.top, port: 2083, type: vmess, uuid: abea7285-5108-401f-9f29-320bae1ebc05, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /LbRDKd7G/, headers: {Host: v2ray3.ibgfw.top}}}
-  - {name: 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80, server: jpjoq.ftvpn.xyz, port: 80, type: vmess, uuid: b9f6ef01-a4a6-4a95-8c22-59666be14599, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /vmess, headers: {Host: jpjoq.ftvpn.xyz}}}
+  - {name: 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083, server: v2ray3.ibgfw.top, port: 2083, type: vmess, uuid: abea7285-5108-401f-9f29-320bae1ebc05, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /LbRDKd7G/, headers: {Host: v2ray3.ibgfw.top}}}
   - {name: 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80, server: 216.107.139.191, port: 80, type: vmess, uuid: e176019a-df22-4895-fbd5-5556b090e4e4, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇫🇷 法国-0-0-v2ray-188.165.170.83:80, server: 188.165.170.83, port: 80, type: vmess, uuid: 860a862a-2798-4037-8513-b060e310e7fc, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
   - {name: _油管：全网最强白嫖, server: 5.183.176.84, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: 🇭🇰 _HK_香港_5, server: 8.218.184.220, port: 52214, type: vmess, uuid: 3b776f57-8b04-498e-89d7-cb5c640eede8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r", server: 45.64.22.56, port: 443, type: trojan, password: !<str> 123456, sni: trojan-ctb-sg01.globalssh.xyz, skip-cert-verify: false}
@@ -515,121 +526,134 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -687,22 +711,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
@@ -1024,121 +1046,134 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -1196,22 +1231,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
@@ -1534,121 +1567,134 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -1706,22 +1752,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
@@ -2056,121 +2100,134 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -2228,22 +2285,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
@@ -2583,121 +2638,134 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -2755,22 +2823,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
@@ -3092,121 +3158,134 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -3264,22 +3343,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
@@ -3602,121 +3679,134 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -3774,22 +3864,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
@@ -4121,121 +4209,134 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-14.18.81.201-002
-      - 🇨🇳 CN-14.18.81.201-004
-      - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-14.18.81.201-006
-      - 🇨🇳 CN-36.134.111.30-008
-      - 🇨🇳 CN-125.88.210.172-009
-      - 🇨🇳 CN-211.140.157.183-010
-      - 🇨🇳 CN-183.240.23.235-011
-      - 🇨🇳 CN-111.22.122.189-012
-      - 🇨🇳 CN-125.88.210.172-013
-      - 🇨🇳 CN-211.140.157.183-014
-      - 🇨🇳 CN-14.29.242.116-015
-      - 🇨🇳 CN-14.18.81.201-016
-      - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
-      - 🇨🇳 CN-111.22.122.189-019
-      - 🇨🇳 CN-113.56.214.51-020
-      - 🇨🇳 CN-14.18.81.201-021
-      - 🇨🇳 CN-14.18.83.33-022
-      - 🇨🇳 CN-113.56.214.51-023
-      - 🇨🇳 CN-27.150.174.128-024
+      - RELAY-104.21.88.192-000
+      - RELAY-172.67.134.254-001
+      - NOWHERE-0.0.0.0-002
+      - RELAY-172.67.81.238-003
+      - RELAY-104.24.177.7-004
+      - RELAY-104.24.176.7-005
+      - RELAY-172.67.81.238-006
+      - RELAY-172.67.81.238-007
+      - RELAY-104.24.176.7-008
+      - RELAY-172.67.81.238-009
+      - RELAY-172.67.81.238-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
+      - 🇨🇳 CN-36.134.111.30-017
+      - 🇨🇳 CN-125.88.210.172-018
+      - 🇨🇳 CN-211.140.157.183-019
+      - 🇨🇳 CN-183.240.23.235-020
+      - 🇨🇳 CN-111.22.122.189-021
+      - 🇨🇳 CN-125.88.210.172-022
+      - 🇨🇳 CN-211.140.157.183-023
+      - 🇨🇳 CN-14.29.242.116-024
       - 🇨🇳 CN-14.18.81.201-025
       - 🇨🇳 CN-14.18.81.201-026
-      - 🇸🇬 SG-52.77.208.127-027
-      - 🇸🇬 SG-18.139.225.91-028
-      - 🇸🇬 SG-54.169.106.234-029
-      - 🇸🇬 SG-54.151.208.138-030
-      - 🇨🇳 CN-14.18.81.201-031
-      - 🇨🇳 CN-14.18.81.201-032
-      - 🇨🇳 CN-14.18.81.201-033
-      - 🇨🇳 CN-14.18.81.201-034
-      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-027
+      - 🇨🇳 CN-111.22.122.189-028
+      - 🇨🇳 CN-113.56.214.51-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.83.33-031
+      - 🇨🇳 CN-113.56.214.51-032
+      - 🇨🇳 CN-27.150.174.128-033
+      - NOWHERE-0.0.0.0-034
       - 🇨🇳 CN-14.18.81.201-036
       - 🇨🇳 CN-14.18.81.201-037
-      - 🇺🇸 US-35.173.137.234-038
-      - 🇸🇬 SG-13.229.225.70-039
-      - 🇸🇬 SG-13.229.59.100-040
-      - 🇸🇬 SG-54.251.129.153-041
-      - 🇸🇬 SG-18.141.158.67-042
+      - 🇸🇬 SG-52.77.208.127-038
+      - 🇸🇬 SG-18.139.225.91-039
+      - 🇸🇬 SG-54.169.106.234-040
+      - 🇸🇬 SG-54.151.208.138-041
+      - 🇨🇳 CN-14.18.81.201-042
       - 🇨🇳 CN-14.18.81.201-043
       - 🇨🇳 CN-14.18.81.201-044
       - 🇨🇳 CN-14.18.81.201-045
       - 🇨🇳 CN-14.18.81.201-046
       - 🇨🇳 CN-14.18.81.201-047
       - 🇨🇳 CN-14.18.81.201-048
-      - 🇨🇳 CN-14.18.81.201-049
-      - 🇨🇳 CN-14.18.81.201-050
-      - 🇰🇷 KR-43.200.253.114-051
-      - 🇯🇵 JP-54.238.231.27-052
-      - 🇨🇳 CN-14.18.81.201-053
-      - 🇯🇵 JP-52.192.58.50-054
-      - 🇯🇵 JP-18.183.85.86-055
+      - 🇺🇸 US-35.173.137.234-049
+      - 🇸🇬 SG-13.229.225.70-050
+      - 🇸🇬 SG-13.229.59.100-051
+      - 🇸🇬 SG-54.251.129.153-052
+      - 🇸🇬 SG-18.141.158.67-053
+      - 🇨🇳 CN-14.18.81.201-054
+      - 🇨🇳 CN-14.18.81.201-055
       - 🇨🇳 CN-14.18.81.201-056
       - 🇨🇳 CN-14.18.81.201-057
-      - 🇯🇵 JP-13.115.230.123-058
+      - 🇨🇳 CN-14.18.81.201-058
       - 🇨🇳 CN-14.18.81.201-059
       - 🇨🇳 CN-14.18.81.201-060
-      - 🇯🇵 JP-43.207.68.127-061
-      - 🇨🇳 CN-14.18.81.201-062
-      - 🇨🇳 CN-14.18.81.201-063
+      - 🇨🇳 CN-14.18.81.201-061
+      - 🇰🇷 KR-43.200.253.114-062
+      - 🇯🇵 JP-54.238.231.27-063
       - 🇨🇳 CN-14.18.81.201-064
-      - 🇨🇳 CN-14.18.81.201-065
-      - 🇨🇳 CN-14.18.81.201-066
+      - 🇯🇵 JP-52.192.58.50-065
+      - 🇯🇵 JP-18.183.85.86-066
       - 🇨🇳 CN-14.18.81.201-067
       - 🇨🇳 CN-14.18.81.201-068
-      - 🇸🇬 SG-18.143.168.100-069
+      - 🇯🇵 JP-13.115.230.123-069
       - 🇨🇳 CN-14.18.81.201-070
       - 🇨🇳 CN-14.18.81.201-071
-      - 🇨🇳 CN-14.18.81.201-072
-      - 🇨🇳 CN-183.240.23.235-073
+      - 🇯🇵 JP-43.207.68.127-072
+      - 🇨🇳 CN-14.18.81.201-073
       - 🇨🇳 CN-14.18.81.201-074
-      - 🇨🇳 CN-120.232.56.48-075
+      - 🇨🇳 CN-14.18.81.201-075
       - 🇨🇳 CN-14.18.81.201-076
-      - 🇨🇳 CN-120.232.56.48-077
-      - 🇨🇳 CN-14.18.83.77-078
+      - 🇨🇳 CN-14.18.81.201-077
+      - 🇨🇳 CN-14.18.81.201-078
       - 🇨🇳 CN-14.18.81.201-079
-      - 🇨🇳 CN-120.232.56.48-080
+      - 🇸🇬 SG-18.143.168.100-080
       - 🇨🇳 CN-14.18.81.201-081
-      - 🇨🇳 CN-120.232.56.48-082
+      - 🇨🇳 CN-14.18.81.201-082
       - 🇨🇳 CN-14.18.81.201-083
-      - 🇨🇳 CN-14.18.81.201-084
-      - 🇨🇳 CN-183.245.149.73-085
-      - 🇨🇳 CN-14.18.81.201-086
-      - 🇨🇳 CN-120.232.56.48-087
-      - 🇨🇳 CN-14.18.81.201-088
-      - 🇨🇳 CN-120.232.56.48-089
-      - 🇨🇳 CN-14.18.81.201-090
-      - 🇨🇳 CN-14.18.81.201-091
-      - 🇨🇳 CN-14.18.81.201-092
-      - 🇨🇳 CN-42.81.163.2-093
-      - 🇨🇳 CN-14.18.81.201-094
-      - 🇨🇳 CN-14.18.81.201-095
-      - 🇨🇳 CN-36.134.111.30-096
-      - 🇨🇳 CN-60.12.127.198-097
-      - 🇨🇳 CN-60.12.127.198-098
-      - 🇨🇳 CN-60.12.127.198-099
-      - 🇨🇳 CN-60.12.127.198-100
-      - 🇨🇳 CN-60.12.127.198-101
-      - 🇨🇳 CN-120.232.140.246-102
-      - 🇨🇳 CN-120.232.140.246-103
-      - 🇨🇳 CN-120.232.140.246-104
-      - 🇨🇳 CN-60.12.127.198-105
-      - 🇨🇳 CN-60.12.127.198-106
-      - 🇨🇳 CN-60.12.127.198-107
-      - 🇨🇳 CN-60.12.127.198-108
-      - 🇨🇳 CN-60.12.127.198-109
-      - 🇨🇳 CN-60.12.127.198-110
-      - 🇨🇳 CN-14.18.81.201-160
-      - 🇨🇳 CN-36.134.111.30-243
-      - 🇭🇰 HK-43.198.89.243-244
-      - 🇭🇰 HK-18.163.196.10-245
-      - 🇨🇳 CN-14.18.81.201-294
-      - NOWHERE-0.0.0.0-317
-      - 🇨🇳 CN-14.18.81.201-413
+      - 🇨🇳 CN-60.12.127.198-132
+      - 🇨🇳 CN-60.12.127.198-133
+      - 🇨🇳 CN-60.12.127.198-134
+      - 🇨🇳 CN-60.12.127.198-135
+      - 🇨🇳 CN-60.12.127.198-136
+      - 🇨🇳 CN-120.232.140.246-137
+      - 🇨🇳 CN-120.232.140.246-138
+      - 🇨🇳 CN-120.232.140.246-139
+      - 🇨🇳 CN-60.12.127.198-140
+      - 🇨🇳 CN-60.12.127.198-141
+      - 🇨🇳 CN-60.12.127.198-142
+      - 🇨🇳 CN-60.12.127.198-143
+      - 🇨🇳 CN-60.12.127.198-144
+      - 🇨🇳 CN-60.12.127.198-145
+      - 🇨🇳 CN-183.240.23.235-146
+      - 🇨🇳 CN-14.18.81.201-147
+      - 🇨🇳 CN-120.232.56.48-148
+      - 🇨🇳 CN-14.18.81.201-149
+      - 🇨🇳 CN-120.232.56.48-150
+      - 🇨🇳 CN-14.18.83.77-151
+      - 🇨🇳 CN-14.18.81.201-152
+      - 🇨🇳 CN-120.232.56.48-153
+      - 🇨🇳 CN-14.18.81.201-154
+      - 🇨🇳 CN-120.232.56.48-155
+      - 🇨🇳 CN-14.18.81.201-156
+      - 🇨🇳 CN-14.18.81.201-157
+      - 🇨🇳 CN-183.245.149.73-158
+      - 🇨🇳 CN-14.18.81.201-159
+      - 🇨🇳 CN-120.232.56.48-160
+      - 🇨🇳 CN-14.18.81.201-161
+      - 🇨🇳 CN-120.232.56.48-162
+      - 🇨🇳 CN-14.18.81.201-163
+      - 🇨🇳 CN-14.18.81.201-164
+      - 🇨🇳 CN-14.18.81.201-165
+      - 🇨🇳 CN-42.81.163.2-166
+      - 🇨🇳 CN-14.18.81.201-167
+      - 🇨🇳 CN-14.18.81.201-168
+      - 🇨🇳 CN-36.134.111.30-169
+      - NOWHERE-0.0.0.0-195
+      - RELAY-104.21.79.181-196
+      - RELAY-172.67.203.203-197
+      - NOWHERE-0.0.0.0-198
+      - 🇭🇰 HK-43.198.89.243-271
+      - 🇭🇰 HK-18.163.196.10-272
+      - 🇨🇳 CN-14.18.81.201-274
+      - 🇨🇳 CN-14.18.81.201-320
+      - NOWHERE-0.0.0.0-433
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -4293,22 +4394,20 @@ proxy-groups:
       - 🇯🇵 日本-东京都-东京-ss-52.196.166.33:443
       - 🇸🇬 新加坡-0-0-ss-18.143.137.38:443
       - 🇦🇺 澳大利亚-0-0-ss-43.201.48.212:443
-      - 🇺🇸 美国-俄勒冈-0-ss-54.203.94.5:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
       - 🇸🇬 新加坡-0-0-ss-18.141.181.186:443
       - 🇦🇺 澳大利亚-0-0-ss-43.200.244.234:443
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 🇰🇷 韩国-首尔-首尔-ss-3.34.40.140:443
       - 🇸🇬 新加坡-0-0-ss-54.169.144.122:443
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.154.95:443
       - 🇸🇬 新加坡-0-0-ss-18.141.224.98:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.166.104:443
+      - 🇰🇷 韩国-首尔-首尔-ss-3.35.214.81:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-v2ray3.ibgfw.top:2083
-      - 🇮🇩 印度尼西亚-大雅加达-雅加达-v2ray-jpjoq.ftvpn.xyz:80
+      - 🇺🇸 美国-0-0-v2ray-v2ray3.ibgfw.top:2083
       - 🇺🇸 美国-俄克拉何马-俄克拉何马城-v2ray-216.107.139.191:80
-      - 🇫🇷 法国-0-0-v2ray-188.165.170.83:80
+      - 🇺🇸 美国-佛罗里达-0-v2ray-vuk2.0bad.com:443
       - _油管：全网最强白嫖
       - 🇭🇰 _HK_香港_5
       - "🇸🇬 _MO_澳门->🇸🇬_SG_新加坡\r"
