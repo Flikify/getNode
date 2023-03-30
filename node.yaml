@@ -5,48 +5,71 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: NOWHERE-0.0.0.0-000, server: 2233Cloud, port: 443, type: trojan, password: a998e199-80b8-3524-bbcc-b888a8ce466f, sni: 2233Cloud, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.198.71.191-002, server: gzyd.jcnode.top, port: 23002, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.198.71.191-004, server: gzyd.jcnode.top, port: 20000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-005, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.198.71.191-006, server: gzyd.jcnode.top, port: 20001, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-007, server: gzdx.jcnode.top, port: 20000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-113.56.214.47-008, server: hbcu.lele233.top, port: 16157, type: ss, cipher: aes-256-gcm, password: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999}
-  - {name: 🇨🇳 CN-120.198.71.191-009, server: gzyd.jcnode.top, port: 27000, type: ss, cipher: aes-256-gcm, password: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999}
-  - {name: 🇨🇳 CN-120.198.71.191-010, server: gzyd.jcnode.top, port: 26000, type: trojan, password: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, sni: uk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-222.84.253.54-011, server: gxct.lele233.top, port: 24389, type: trojan, password: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, sni: uk01.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.198.71.191-012, server: gzyd.jcnode.top, port: 21001, type: ss, cipher: aes-256-gcm, password: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999}
-  - {name: 🇨🇳 CN-120.198.71.191-013, server: gzyd.jcnode.top, port: 21002, type: trojan, password: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, sni: jp02.ckcloud.info, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.198.71.191-015, server: gzyd.jcnode.top, port: 25000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-016, server: gzdx.jcnode.top, port: 25000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-017, server: gzdx.jcnode.top, port: 65000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-018, server: gzdx.jcnode.top, port: 63000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-019, server: gzdx.jcnode.top, port: 23001, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.198.71.191-021, server: gzyd.jcnode.top, port: 28001, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-14.18.81.201-022, server: gzdx.jcnode.top, port: 28000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
-  - {name: 🇨🇳 CN-113.56.214.47-023, server: hbcu.lele233.top, port: 44390, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hbcu.lele233.top}}}
-  - {name: 🇨🇳 CN-120.198.71.191-024, server: gzyd.jcnode.top, port: 28000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.198.71.191-025, server: gzyd.jcnode.top, port: 24000, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.198.71.191-026, server: gzyd.jcnode.top, port: 24001, type: vmess, uuid: 9fdb6e89-6e1e-434f-9e89-bb5d109a3999, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇭🇰 HK-16.162.161.32-027, server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, port: 80, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win}}}
-  - {name: 🇭🇰 HK-16.163.102.109-028, server: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win, port: 443, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win}}}
-  - {name: 🇨🇳 CN-120.198.71.191-030, server: gzyd.jcnode.top, port: 23002, type: vmess, uuid: 40f6fb6d-93e9-4e66-9bb1-0de367e07dfc, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
-  - {name: 🇨🇳 CN-120.198.71.191-041, server: gzyd.jcnode.top, port: 21002, type: trojan, password: 40f6fb6d-93e9-4e66-9bb1-0de367e07dfc, sni: jp02.ckcloud.info, skip-cert-verify: false}
-  - {name: NOWHERE-0.0.0.0-055, server: 2233Cloud, port: 443, type: trojan, password: 098e6d18-62b5-37e8-94f1-2b79707e5bd9, sni: 2233Cloud, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-081, server: scloud56.jafiyun.world, port: 22056, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud56.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-082, server: scloud57.jafiyun.world, port: 22057, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud57.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-083, server: scloud58.jafiyun.world, port: 22058, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud58.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-084, server: scloud59.jafiyun.world, port: 22059, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud59.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-085, server: scloud60.jafiyun.world, port: 22060, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud60.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.140.246-086, server: scloud41.jafiyun.world, port: 22041, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud41.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.140.246-087, server: scloud42.jafiyun.world, port: 22042, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud42.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-120.232.140.246-088, server: scloud43.jafiyun.world, port: 22043, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud43.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-089, server: scloud52.jafiyun.world, port: 22052, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud52.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-090, server: scloud53.jafiyun.world, port: 22053, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud53.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-091, server: scloud54.jafiyun.world, port: 22054, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud54.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-092, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud29.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-093, server: scloud15.jafiyun.world, port: 22015, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud15.jafiyun.world, skip-cert-verify: false}
-  - {name: 🇨🇳 CN-60.12.127.198-094, server: scloud16.jafiyun.world, port: 22016, type: trojan, password: dbc6af9b-976a-3cdb-8026-90daaede23d3, sni: scloud16.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-000, server: gzyd.jcnode.top, port: 23002, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-002, server: gzyd.jcnode.top, port: 20000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-003, server: gzdx.jcnode.top, port: 20001, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-004, server: gzyd.jcnode.top, port: 20001, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-005, server: gzdx.jcnode.top, port: 20000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-113.56.214.47-006, server: hbcu.lele233.top, port: 16157, type: ss, cipher: aes-256-gcm, password: 6ba93b39-1cef-472c-8f1d-0564aa885ab4}
+  - {name: 🇨🇳 CN-14.18.81.201-007, server: gzyd.jcnode.top, port: 27000, type: ss, cipher: aes-256-gcm, password: 6ba93b39-1cef-472c-8f1d-0564aa885ab4}
+  - {name: 🇨🇳 CN-14.18.81.201-008, server: gzyd.jcnode.top, port: 26000, type: trojan, password: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-222.84.253.54-009, server: gxct.lele233.top, port: 24389, type: trojan, password: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-010, server: gzyd.jcnode.top, port: 21001, type: ss, cipher: aes-256-gcm, password: 6ba93b39-1cef-472c-8f1d-0564aa885ab4}
+  - {name: 🇨🇳 CN-14.18.81.201-011, server: gzyd.jcnode.top, port: 21002, type: trojan, password: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, sni: jp02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-013, server: gzyd.jcnode.top, port: 25000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-014, server: gzdx.jcnode.top, port: 25000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-015, server: gzdx.jcnode.top, port: 65000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-016, server: gzdx.jcnode.top, port: 63000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-017, server: gzdx.jcnode.top, port: 23001, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-019, server: gzyd.jcnode.top, port: 28001, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-020, server: gzdx.jcnode.top, port: 28000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-113.56.214.47-021, server: hbcu.lele233.top, port: 44390, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: hbcu.lele233.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-022, server: gzyd.jcnode.top, port: 28000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-023, server: gzyd.jcnode.top, port: 24000, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-024, server: gzyd.jcnode.top, port: 24001, type: vmess, uuid: 6ba93b39-1cef-472c-8f1d-0564aa885ab4, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇭🇰 HK-16.162.161.32-025, server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, port: 80, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win}}}
+  - {name: 🇭🇰 HK-16.163.102.109-026, server: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win, port: 443, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000002a.node-for-bigairport.win}}}
+  - {name: 🇨🇳 CN-120.232.233.203-027, server: gy.xueshao.top, port: 13945, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: hk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-028, server: gzdx.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2}
+  - {name: 🇨🇳 CN-14.18.81.201-029, server: gzyd.jcnode.top, port: 40002, type: ss, cipher: aes-256-gcm, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2}
+  - {name: 🇨🇳 CN-14.18.81.201-030, server: gzdx.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2}
+  - {name: 🇨🇳 CN-14.18.81.201-031, server: gzyd.jcnode.top, port: 40003, type: ss, cipher: aes-256-gcm, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2}
+  - {name: 🇨🇳 CN-14.18.81.201-032, server: gzdx.jcnode.top, port: 40001, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: hk02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-033, server: gzyd.jcnode.top, port: 40001, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: hk02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-034, server: gzyd02.jcnode.top, port: 40001, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: hk02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-035, server: gzdx.jcnode.top, port: 41002, type: ss, cipher: aes-256-gcm, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2}
+  - {name: 🇨🇳 CN-14.18.81.201-036, server: gzyd.jcnode.top, port: 41002, type: ss, cipher: aes-256-gcm, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2}
+  - {name: 🇨🇳 CN-14.18.81.201-037, server: gzdx.jcnode.top, port: 41000, type: ss, cipher: aes-256-gcm, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2}
+  - {name: 🇨🇳 CN-14.18.81.201-038, server: gzdx.jcnode.top, port: 41003, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: jp01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-039, server: gzdx.jcnode.top, port: 42000, type: vmess, uuid: 891b0eff-85fc-4b6c-abe2-99505c6660d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-040, server: gzyd02.jcnode.top, port: 42000, type: vmess, uuid: 891b0eff-85fc-4b6c-abe2-99505c6660d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd02.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-041, server: gzyd.jcnode.top, port: 43000, type: vmess, uuid: 891b0eff-85fc-4b6c-abe2-99505c6660d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-042, server: gzdx.jcnode.top, port: 43000, type: vmess, uuid: 891b0eff-85fc-4b6c-abe2-99505c6660d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-043, server: gzyd.jcnode.top, port: 43002, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: sg01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-044, server: gzdx.jcnode.top, port: 43002, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: sg01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-045, server: gzdx.jcnode.top, port: 48000, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: us2.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-046, server: gzdx.jcnode.top, port: 48002, type: vmess, uuid: 891b0eff-85fc-4b6c-abe2-99505c6660d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-113.56.214.47-047, server: hbcu.lele233.top, port: 29733, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-111.57.120.92-048, server: nmcm.lele233.top, port: 57299, type: trojan, password: 891b0eff-85fc-4b6c-abe2-99505c6660d2, sni: uk01.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-14.18.81.201-049, server: gzdx.jcnode.top, port: 49000, type: vmess, uuid: 891b0eff-85fc-4b6c-abe2-99505c6660d2, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /fly, headers: {Host: gzdx.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-051, server: gzyd.jcnode.top, port: 23002, type: vmess, uuid: 3b4cbf28-fe5a-4c37-b75f-2a60f9aaa20c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: gzyd.jcnode.top}}}
+  - {name: 🇨🇳 CN-14.18.81.201-062, server: gzyd.jcnode.top, port: 21002, type: trojan, password: 3b4cbf28-fe5a-4c37-b75f-2a60f9aaa20c, sni: jp02.ckcloud.info, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-075, server: scloud56.jafiyun.world, port: 22056, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud56.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-076, server: scloud57.jafiyun.world, port: 22057, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud57.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-077, server: scloud58.jafiyun.world, port: 22058, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud58.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-078, server: scloud59.jafiyun.world, port: 22059, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud59.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-079, server: scloud60.jafiyun.world, port: 22060, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud60.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.140.246-080, server: scloud41.jafiyun.world, port: 22041, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud41.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.140.246-081, server: scloud42.jafiyun.world, port: 22042, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud42.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-120.232.140.246-082, server: scloud43.jafiyun.world, port: 22043, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud43.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-083, server: scloud52.jafiyun.world, port: 22052, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud52.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-084, server: scloud53.jafiyun.world, port: 22053, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud53.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-085, server: scloud54.jafiyun.world, port: 22054, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud54.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-086, server: scloud29.jafiyun.world, port: 22029, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud29.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-087, server: scloud15.jafiyun.world, port: 22015, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud15.jafiyun.world, skip-cert-verify: false}
+  - {name: 🇨🇳 CN-60.12.127.198-088, server: scloud16.jafiyun.world, port: 22016, type: trojan, password: b6937e01-4068-3aea-834d-c1bea007a960, sni: scloud16.jafiyun.world, skip-cert-verify: false}
+  - {name: NOWHERE-0.0.0.0-176, server: 2233Cloud, port: 443, type: trojan, password: 599123a8-c318-3a5f-8006-329d6cf777b4, sni: 2233Cloud, skip-cert-verify: false}
+  - {name: NOWHERE-0.0.0.0-178, server: 2233Cloud, port: 443, type: trojan, password: ee6d9630-1d60-3f01-9ada-7ef5569b65c4, sni: 2233Cloud, skip-cert-verify: false}
   - {name: 🇰🇷 _KR_韩国_1, server: 13.125.72.197, port: 43632, type: vmess, uuid: 18f49289-9ee1-439a-bbaa-dbb59172c42e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇨🇳 _TW_台湾_1, server: 34.81.61.24, port: 43632, type: vmess, uuid: 18f49289-9ee1-439a-bbaa-dbb59172c42e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: false}
   - {name: 🇺🇸 _US_美国_1, server: 167.88.63.79, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
@@ -87,7 +110,6 @@ proxies:
   - {name: 中国-广东-广州-ss-14.29.124.168:25267, server: 14.29.124.168, port: 25267, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25252, server: 14.29.124.168, port: 25252, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:24009, server: 14.29.124.168, port: 24009, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25230, server: 14.29.124.168, port: 25230, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118, server: 85.208.108.60, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443, server: 43.207.221.161, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 中国-广东-广州-ss-14.29.124.168:25238, server: 14.29.124.168, port: 25238, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
@@ -95,12 +117,11 @@ proxies:
   - {name: 中国-广东-广州-ss-14.29.124.168:31046, server: 14.29.124.168, port: 31046, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25271, server: 14.29.124.168, port: 25271, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443, server: 43.207.205.208, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25233, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: 中国-广东-广州-ss-14.29.124.168:24000, server: 14.29.124.168, port: 24000, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25222, server: 14.29.124.168, port: 25222, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25210, server: 14.29.124.168, port: 25210, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443, server: 43.201.60.60, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇸🇬 新加坡-0-0-ss-54.169.160.39:801, server: 54.169.160.39, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: tvX1v#NSFP_LG_bJ}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25287, server: 14.29.124.168, port: 25287, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:24002, server: 14.29.124.168, port: 24002, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25261, server: 14.29.124.168, port: 25261, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25284, server: 14.29.124.168, port: 25284, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
@@ -111,29 +132,26 @@ proxies:
   - {name: 中国-广东-广州-ss-14.29.124.168:25226, server: 14.29.124.168, port: 25226, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25295, server: 14.29.124.168, port: 25295, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443, server: 43.206.194.133, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 中国-0-0-ss-36.139.166.247:11023, server: 36.139.166.247, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@}
+  - {name: 中国-广东-广州-ss-14.29.124.168:25270, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25272, server: 14.29.124.168, port: 25272, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25254, server: 14.29.124.168, port: 25254, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25266, server: 14.29.124.168, port: 25266, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443, server: 13.215.183.79, port: 443, type: ss, cipher: aes-256-cfb, password: doub.io}
   - {name: 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443, server: 13.115.133.207, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25231, server: 14.29.124.168, port: 25231, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: 中国-广东-广州-ss-14.29.124.168:24007, server: 14.29.124.168, port: 24007, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443, server: 13.215.177.64, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443, server: 43.207.160.88, port: 443, type: ss, cipher: aes-256-cfb, password: doub.io}
   - {name: 中国-0-0-ss-36.139.166.231:11023, server: 36.139.166.231, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@}
   - {name: 中国-广东-广州-ss-14.29.124.168:25259, server: 14.29.124.168, port: 25259, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443, server: 43.201.86.41, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443, server: 43.207.117.53, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25219, server: 14.29.124.168, port: 25219, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25289, server: 14.29.124.168, port: 25289, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443, server: 43.207.66.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
-  - {name: 中国-广东-广州-ss-14.29.124.168:24008, server: 14.29.124.168, port: 24008, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25256, server: 14.29.124.168, port: 25256, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443, server: 43.201.57.87, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 中国-广东-广州-ss-14.29.124.168:25233, server: 14.29.124.168, port: 25233, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443, server: 43.207.225.151, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 中国-广东-广州-ss-14.29.124.168:25241, server: 14.29.124.168, port: 25241, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25218, server: 14.29.124.168, port: 25218, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004, server: 172.99.188.99, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
   - {name: 中国-广东-广州-ss-14.29.124.168:24004, server: 14.29.124.168, port: 24004, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443, server: 43.201.70.114, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375, server: 85.208.108.60, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: 中国-0-0-ss-36.138.140.208:11023, server: 36.138.140.208, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@}
   - {name: 中国-0-0-ss-36.139.166.252:11023, server: 36.139.166.252, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@}
   - {name: 中国-广东-广州-ss-14.29.124.168:25268, server: 14.29.124.168, port: 25268, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
@@ -142,13 +160,10 @@ proxies:
   - {name: 中国-广东-广州-ss-14.29.124.168:24006, server: 14.29.124.168, port: 24006, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25294, server: 14.29.124.168, port: 25294, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25247, server: 14.29.124.168, port: 25247, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25296, server: 14.29.124.168, port: 25296, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25279, server: 14.29.124.168, port: 25279, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25235, server: 14.29.124.168, port: 25235, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25251, server: 14.29.124.168, port: 25251, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-广东-广州-ss-14.29.124.168:25297, server: 14.29.124.168, port: 25297, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
+  - {name: 中国-0-0-ss-36.137.106.45:11023, server: 36.137.106.45, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@}
   - {name: 中国-广东-广州-ss-14.29.124.168:25286, server: 14.29.124.168, port: 25286, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
-  - {name: 中国-广东-广州-ss-14.29.124.168:25270, server: 14.29.124.168, port: 25270, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 中国-0-0-ss-36.137.106.115:11023, server: 36.137.106.115, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@}
   - {name: 中国-0-0-ss-36.138.193.128:11023, server: 36.138.193.128, port: 11023, type: ss, cipher: aes-256-gcm, password: ll668668@}
   - {name: 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888, server: 172.99.188.99, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
@@ -158,35 +173,40 @@ proxies:
   - {name: 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443, server: 43.201.146.250, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 中国-广东-广州-ss-14.29.124.168:25280, server: 14.29.124.168, port: 25280, type: ss, cipher: aes-128-cfb, password: QazEdcTgb159@$*}
   - {name: 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983, server: playweb.ml, port: 6983, type: ssr, cipher: chacha20-ietf, password: Hucloud12, protocol: auth_sha1_v4, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 中国-广东-广州-ssr-14.29.124.168:24008, server: 14.29.124.168, port: 24008, type: ssr, cipher: aes-128-cfb, password: QazEdcTgb159@$*, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
+  - {name: 中国-广东-广州-ssr-14.29.124.168:24000, server: 14.29.124.168, port: 24000, type: ssr, cipher: aes-128-cfb, password: QazEdcTgb159@$*, protocol: origin, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443, server: lv2.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv2.sharecentrepro.org}}}
   - {name: 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443, server: cf-topspeedv9.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedv9.uk}}}
   - {name: 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443, server: quranweb23.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb23.xyz}}}
   - {name: 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443, server: cf-topspeedv4.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedv4.uk}}}
-  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443, server: ca.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}}
-  - {name: 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443, server: quranweb34.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb34.xyz}}}
-  - {name: 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443, server: quran-audio4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio4.xyz}}}
+  - {name: 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443, server: ca.ilovescp.com, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ca.ilovescp.com}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443, server: quranweb34.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb34.xyz}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443, server: quran-audio4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio4.xyz}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443, server: holyquran19.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran19.store}}}
-  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443, server: holyquran8.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran8.store}}}
+  - {name: 🇺🇸 美国-0-0-v2ray-holyquran8.store:443, server: holyquran8.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran8.store}}}
   - {name: 中国-北京-北京-v2ray-47.93.231.218:53022, server: 47.93.231.218, port: 53022, type: vmess, uuid: 95fd7642-2160-4528-e909-3d526b533013, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
   - {name: 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443, server: quran-audio2.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quran-audio2.xyz}}}
-  - {name: 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443, server: cf-topspeedvv2.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedvv2.uk}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443, server: cf-topspeedvv2.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedvv2.uk}}}
   - {name: 🇺🇸 美国-0-0-v2ray-holyquran15.store:443, server: holyquran15.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran15.store}}}
-  - {name: 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80, server: s245.rpscloud3.cloud, port: 80, type: vmess, uuid: d65ca664-72d3-4a14-a836-00eadd0df46e, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql, headers: {Host: s245.rpscloud3.cloud}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80, server: s245.rpscloud3.cloud, port: 80, type: vmess, uuid: d65ca664-72d3-4a14-a836-00eadd0df46e, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /graphql, headers: {Host: s245.rpscloud3.cloud}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443, server: freequranbook.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: freequranbook.uk}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443, server: quranweb19.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb19.xyz}}}
   - {name: 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443, server: la.awsbest.com, port: 443, type: vmess, uuid: 8b6dd709-4d4e-4b92-f542-54a676efbfe4, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shares, headers: {Host: la.awsbest.com}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443, server: quranweb4.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb4.xyz}}}
   - {name: 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443, server: lv1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv1.sharecentrepro.org}}}
-  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443, server: wwwow.ir, port: 443, type: vmess, uuid: 84b4d2ac-699b-4ba5-a6b2-adaaa82b667d, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /84b4d2ac-699b-4ba5-a6b2-adaaa82b667d-vm, headers: {Host: wwwow.ir}}}
+  - {name: 🇺🇸 美国-0-0-v2ray-wwwow.ir:443, server: wwwow.ir, port: 443, type: vmess, uuid: 84b4d2ac-699b-4ba5-a6b2-adaaa82b667d, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /84b4d2ac-699b-4ba5-a6b2-adaaa82b667d-vm, headers: {Host: wwwow.ir}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443, server: lv3.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: lv3.sharecentrepro.org}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443, server: holyquran1.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran1.store}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443, server: cf-topspeedoneplus.uk, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: cf-topspeedoneplus.uk}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880, server: sermci19.numallas.shop, port: 8880, type: vmess, uuid: c3b965e5-57f3-42ce-900e-dfcd17547650, alterId: 4, cipher: auto, tls: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sermci19.numallas.shop}}}
   - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443, server: ny1.sharecentrepro.org, port: 443, type: vmess, uuid: 823c31da-701f-483d-b36e-896e5cf0987a, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /shirker, headers: {Host: ny1.sharecentrepro.org}}}
   - {name: 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443, server: quranweb10.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb10.xyz}}}
-  - {name: 🇺🇸 美国-0-0-v2ray-holyquran10.store:443, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran10.store}}}
-  - {name: 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443, server: quranweb17.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb17.xyz}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443, server: holyquran10.store, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: holyquran10.store}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443, server: quranweb17.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb17.xyz}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443, server: quranweb3.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb3.xyz}}}
+  - {name: 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443, server: woiden.739256.xyz, port: 443, type: vmess, uuid: d05d144a-71a9-4720-8c4e-565257953069, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: woiden.739256.xyz}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443, server: finland1.yj2022.ga, port: 443, type: vmess, uuid: 4b5e4565-322f-4223-a891-78a84f189726, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /WKtzeN11GLqwVNBTp9mX, headers: {Host: finland1.yj2022.ga}}}
+  - {name: 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443, server: quranweb29.xyz, port: 443, type: vmess, uuid: 8bbd91fe-a30b-4e29-bfc7-c28a44c0cb8f, alterId: 4, cipher: auto, tls: true, skip-cert-verify: false, network: ws, ws-opts: {path: /current_time, headers: {Host: quranweb29.xyz}}}
   - {name: _油管：全网最强白嫖, server: 5.183.176.93, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: _油管：全网最强白嫖 2, server: 5.183.176.84, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: _油管：全网最强白嫖 3, server: 5.183.176.91, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
@@ -485,48 +505,71 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -567,7 +610,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -575,12 +617,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -591,29 +632,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -622,13 +660,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -638,35 +673,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
@@ -964,48 +1004,71 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -1046,7 +1109,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -1054,12 +1116,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -1070,29 +1131,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -1101,13 +1159,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -1117,35 +1172,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
@@ -1444,48 +1504,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -1526,7 +1609,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -1534,12 +1616,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -1550,29 +1631,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -1581,13 +1659,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -1597,35 +1672,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
@@ -1936,48 +2016,71 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -2018,7 +2121,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -2026,12 +2128,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -2042,29 +2143,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -2073,13 +2171,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -2089,35 +2184,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
@@ -2423,48 +2523,71 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -2505,7 +2628,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -2513,12 +2635,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -2529,29 +2650,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -2560,13 +2678,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -2576,35 +2691,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
@@ -2902,48 +3022,71 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -2984,7 +3127,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -2992,12 +3134,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -3008,29 +3149,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -3039,13 +3177,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -3055,35 +3190,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
@@ -3382,48 +3522,71 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -3464,7 +3627,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -3472,12 +3634,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -3488,29 +3649,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -3519,13 +3677,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -3535,35 +3690,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
@@ -3871,48 +4031,71 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - NOWHERE-0.0.0.0-000
-      - 🇨🇳 CN-120.198.71.191-002
-      - 🇨🇳 CN-120.198.71.191-004
+      - 🇨🇳 CN-14.18.81.201-000
+      - 🇨🇳 CN-14.18.81.201-002
+      - 🇨🇳 CN-14.18.81.201-003
+      - 🇨🇳 CN-14.18.81.201-004
       - 🇨🇳 CN-14.18.81.201-005
-      - 🇨🇳 CN-120.198.71.191-006
+      - 🇨🇳 CN-113.56.214.47-006
       - 🇨🇳 CN-14.18.81.201-007
-      - 🇨🇳 CN-113.56.214.47-008
-      - 🇨🇳 CN-120.198.71.191-009
-      - 🇨🇳 CN-120.198.71.191-010
-      - 🇨🇳 CN-222.84.253.54-011
-      - 🇨🇳 CN-120.198.71.191-012
-      - 🇨🇳 CN-120.198.71.191-013
-      - 🇨🇳 CN-120.198.71.191-015
+      - 🇨🇳 CN-14.18.81.201-008
+      - 🇨🇳 CN-222.84.253.54-009
+      - 🇨🇳 CN-14.18.81.201-010
+      - 🇨🇳 CN-14.18.81.201-011
+      - 🇨🇳 CN-14.18.81.201-013
+      - 🇨🇳 CN-14.18.81.201-014
+      - 🇨🇳 CN-14.18.81.201-015
       - 🇨🇳 CN-14.18.81.201-016
       - 🇨🇳 CN-14.18.81.201-017
-      - 🇨🇳 CN-14.18.81.201-018
       - 🇨🇳 CN-14.18.81.201-019
-      - 🇨🇳 CN-120.198.71.191-021
+      - 🇨🇳 CN-14.18.81.201-020
+      - 🇨🇳 CN-113.56.214.47-021
       - 🇨🇳 CN-14.18.81.201-022
-      - 🇨🇳 CN-113.56.214.47-023
-      - 🇨🇳 CN-120.198.71.191-024
-      - 🇨🇳 CN-120.198.71.191-025
-      - 🇨🇳 CN-120.198.71.191-026
-      - 🇭🇰 HK-16.162.161.32-027
-      - 🇭🇰 HK-16.163.102.109-028
-      - 🇨🇳 CN-120.198.71.191-030
-      - 🇨🇳 CN-120.198.71.191-041
-      - NOWHERE-0.0.0.0-055
-      - 🇨🇳 CN-60.12.127.198-081
-      - 🇨🇳 CN-60.12.127.198-082
+      - 🇨🇳 CN-14.18.81.201-023
+      - 🇨🇳 CN-14.18.81.201-024
+      - 🇭🇰 HK-16.162.161.32-025
+      - 🇭🇰 HK-16.163.102.109-026
+      - 🇨🇳 CN-120.232.233.203-027
+      - 🇨🇳 CN-14.18.81.201-028
+      - 🇨🇳 CN-14.18.81.201-029
+      - 🇨🇳 CN-14.18.81.201-030
+      - 🇨🇳 CN-14.18.81.201-031
+      - 🇨🇳 CN-14.18.81.201-032
+      - 🇨🇳 CN-14.18.81.201-033
+      - 🇨🇳 CN-14.18.81.201-034
+      - 🇨🇳 CN-14.18.81.201-035
+      - 🇨🇳 CN-14.18.81.201-036
+      - 🇨🇳 CN-14.18.81.201-037
+      - 🇨🇳 CN-14.18.81.201-038
+      - 🇨🇳 CN-14.18.81.201-039
+      - 🇨🇳 CN-14.18.81.201-040
+      - 🇨🇳 CN-14.18.81.201-041
+      - 🇨🇳 CN-14.18.81.201-042
+      - 🇨🇳 CN-14.18.81.201-043
+      - 🇨🇳 CN-14.18.81.201-044
+      - 🇨🇳 CN-14.18.81.201-045
+      - 🇨🇳 CN-14.18.81.201-046
+      - 🇨🇳 CN-113.56.214.47-047
+      - 🇨🇳 CN-111.57.120.92-048
+      - 🇨🇳 CN-14.18.81.201-049
+      - 🇨🇳 CN-14.18.81.201-051
+      - 🇨🇳 CN-14.18.81.201-062
+      - 🇨🇳 CN-60.12.127.198-075
+      - 🇨🇳 CN-60.12.127.198-076
+      - 🇨🇳 CN-60.12.127.198-077
+      - 🇨🇳 CN-60.12.127.198-078
+      - 🇨🇳 CN-60.12.127.198-079
+      - 🇨🇳 CN-120.232.140.246-080
+      - 🇨🇳 CN-120.232.140.246-081
+      - 🇨🇳 CN-120.232.140.246-082
       - 🇨🇳 CN-60.12.127.198-083
       - 🇨🇳 CN-60.12.127.198-084
       - 🇨🇳 CN-60.12.127.198-085
-      - 🇨🇳 CN-120.232.140.246-086
-      - 🇨🇳 CN-120.232.140.246-087
-      - 🇨🇳 CN-120.232.140.246-088
-      - 🇨🇳 CN-60.12.127.198-089
-      - 🇨🇳 CN-60.12.127.198-090
-      - 🇨🇳 CN-60.12.127.198-091
-      - 🇨🇳 CN-60.12.127.198-092
-      - 🇨🇳 CN-60.12.127.198-093
-      - 🇨🇳 CN-60.12.127.198-094
+      - 🇨🇳 CN-60.12.127.198-086
+      - 🇨🇳 CN-60.12.127.198-087
+      - 🇨🇳 CN-60.12.127.198-088
+      - NOWHERE-0.0.0.0-176
+      - NOWHERE-0.0.0.0-178
       - 🇰🇷 _KR_韩国_1
       - 🇨🇳 _TW_台湾_1
       - 🇺🇸 _US_美国_1
@@ -3953,7 +4136,6 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25267
       - 中国-广东-广州-ss-14.29.124.168:25252
       - 中国-广东-广州-ss-14.29.124.168:24009
-      - 中国-广东-广州-ss-14.29.124.168:25230
       - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:8118
       - 🇦🇺 澳大利亚-0-0-ss-43.207.221.161:443
       - 中国-广东-广州-ss-14.29.124.168:25238
@@ -3961,12 +4143,11 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:31046
       - 中国-广东-广州-ss-14.29.124.168:25271
       - 🇦🇺 澳大利亚-0-0-ss-43.207.205.208:443
-      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 中国-广东-广州-ss-14.29.124.168:24000
       - 中国-广东-广州-ss-14.29.124.168:25222
       - 中国-广东-广州-ss-14.29.124.168:25210
       - 🇦🇺 澳大利亚-0-0-ss-43.201.60.60:443
       - 🇸🇬 新加坡-0-0-ss-54.169.160.39:801
-      - 中国-广东-广州-ss-14.29.124.168:25287
       - 中国-广东-广州-ss-14.29.124.168:24002
       - 中国-广东-广州-ss-14.29.124.168:25261
       - 中国-广东-广州-ss-14.29.124.168:25284
@@ -3977,29 +4158,26 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:25226
       - 中国-广东-广州-ss-14.29.124.168:25295
       - 🇦🇺 澳大利亚-0-0-ss-43.206.194.133:443
-      - 中国-0-0-ss-36.139.166.247:11023
+      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-广东-广州-ss-14.29.124.168:25272
       - 中国-广东-广州-ss-14.29.124.168:25254
       - 中国-广东-广州-ss-14.29.124.168:25266
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.183.79:443
       - 🇯🇵 日本-东京都-东京-ss-13.115.133.207:443
-      - 中国-广东-广州-ss-14.29.124.168:25231
+      - 中国-广东-广州-ss-14.29.124.168:24007
       - 🇺🇸 美国-康涅狄格-0-ss-13.215.177.64:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.160.88:443
       - 中国-0-0-ss-36.139.166.231:11023
       - 中国-广东-广州-ss-14.29.124.168:25259
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.86.41:443
       - 🇦🇺 澳大利亚-0-0-ss-43.207.117.53:443
-      - 中国-广东-广州-ss-14.29.124.168:25219
-      - 中国-广东-广州-ss-14.29.124.168:25289
-      - 🇦🇺 澳大利亚-0-0-ss-43.207.66.114:443
-      - 中国-广东-广州-ss-14.29.124.168:24008
-      - 中国-广东-广州-ss-14.29.124.168:25256
+      - 🇦🇺 澳大利亚-0-0-ss-43.201.57.87:443
+      - 中国-广东-广州-ss-14.29.124.168:25233
+      - 🇦🇺 澳大利亚-0-0-ss-43.207.225.151:443
       - 中国-广东-广州-ss-14.29.124.168:25241
       - 中国-广东-广州-ss-14.29.124.168:25218
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:5004
       - 中国-广东-广州-ss-14.29.124.168:24004
-      - 🇦🇺 澳大利亚-0-0-ss-43.201.70.114:443
+      - 🇯🇵 日本-东京都-东京-ss-85.208.108.60:2375
       - 中国-0-0-ss-36.138.140.208:11023
       - 中国-0-0-ss-36.139.166.252:11023
       - 中国-广东-广州-ss-14.29.124.168:25268
@@ -4008,13 +4186,10 @@ proxy-groups:
       - 中国-广东-广州-ss-14.29.124.168:24006
       - 中国-广东-广州-ss-14.29.124.168:25294
       - 中国-广东-广州-ss-14.29.124.168:25247
-      - 中国-广东-广州-ss-14.29.124.168:25296
-      - 中国-广东-广州-ss-14.29.124.168:25279
       - 中国-广东-广州-ss-14.29.124.168:25235
-      - 中国-广东-广州-ss-14.29.124.168:25251
       - 中国-广东-广州-ss-14.29.124.168:25297
+      - 中国-0-0-ss-36.137.106.45:11023
       - 中国-广东-广州-ss-14.29.124.168:25286
-      - 中国-广东-广州-ss-14.29.124.168:25270
       - 中国-0-0-ss-36.137.106.115:11023
       - 中国-0-0-ss-36.138.193.128:11023
       - 🇺🇸 美国-康涅狄格-0-ss-172.99.188.99:8888
@@ -4024,35 +4199,40 @@ proxy-groups:
       - 🇦🇺 澳大利亚-0-0-ss-43.201.146.250:443
       - 中国-广东-广州-ss-14.29.124.168:25280
       - 🇺🇸 美国-弗吉尼亚-阿什本-ssr-playweb.ml:6983
-      - 中国-广东-广州-ssr-14.29.124.168:24008
-      - 🇺🇸 美国-0-0-v2ray-lv2.sharecentrepro.org:443
+      - 中国-广东-广州-ssr-14.29.124.168:24000
+      - 🇯🇵 日本-东京都-东京-ssr-jp-am48-6.eqnode.net:8081
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv2.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv9.uk:443
       - 🇺🇸 美国-0-0-v2ray-quranweb23.xyz:443
       - 🇺🇸 美国-0-0-v2ray-cf-topspeedv4.uk:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ca.ilovescp.com:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb34.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-quran-audio4.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-ca.ilovescp.com:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb34.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quran-audio4.xyz:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran19.store:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran8.store:443
+      - 🇺🇸 美国-0-0-v2ray-holyquran8.store:443
       - 中国-北京-北京-v2ray-47.93.231.218:53022
       - 🇺🇸 美国-0-0-v2ray-quran-audio2.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-cf-topspeedvv2.uk:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedvv2.uk:443
       - 🇺🇸 美国-0-0-v2ray-holyquran15.store:443
-      - 🇺🇸 美国-0-0-v2ray-s245.rpscloud3.cloud:80
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-s245.rpscloud3.cloud:80
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-freequranbook.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb19.xyz:443
       - 🇺🇸 美国-0-0-v2ray-la.awsbest.com:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb4.xyz:443
       - 🇺🇸 美国-0-0-v2ray-lv1.sharecentrepro.org:443
-      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-wwwow.ir:443
+      - 🇺🇸 美国-0-0-v2ray-wwwow.ir:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-lv3.sharecentrepro.org:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran1.store:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-cf-topspeedoneplus.uk:443
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-sermci19.numallas.shop:8880
       - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-ny1.sharecentrepro.org:443
       - 🇺🇸 美国-0-0-v2ray-quranweb10.xyz:443
-      - 🇺🇸 美国-0-0-v2ray-holyquran10.store:443
-      - 🇺🇸 美国-0-0-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-holyquran10.store:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb17.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb3.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-woiden.739256.xyz:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-finland1.yj2022.ga:443
+      - 🇺🇸 美国-加利福尼亚-旧金山-v2ray-quranweb29.xyz:443
       - _油管：全网最强白嫖
       - _油管：全网最强白嫖 2
       - _油管：全网最强白嫖 3
