@@ -4,9 +4,12 @@
 - 每个小时获取1次最新的节点信息
 - 所有节点信息来自互联网
 ## 订阅链接
-- 源地址：https://raw.githubusercontent.com/a2470982985/getNode/main/clash.yaml
-- 加速地址1：https://ghproxy.com/https://raw.githubusercontent.com/a2470982985/getNode/main/clash.yaml
-- 加速地址2：https://cdn.jsdelivr.net/gh/a2470982985/getNode@main/clash.yaml
+- Clash源地址：https://raw.githubusercontent.com/a2470982985/getNode/main/clash.yaml
+- Clash加速地址1：https://ghproxy.com/https://raw.githubusercontent.com/a2470982985/getNode/main/clash.yaml
+- Clash加速地址2：https://cdn.jsdelivr.net/gh/a2470982985/getNode@main/clash.yaml
+- v2ray源地址：https://raw.githubusercontent.com/a2470982985/getNode/main/v2ray.txt
+- v2ray加速地址1：https://ghproxy.com/https://raw.githubusercontent.com/a2470982985/getNode/main/v2ray.txt
+- v2ray加速地址2：https://cdn.jsdelivr.net/gh/a2470982985/getNode@main/v2ray.txt
 ## 工具推荐
 
 > 加粗字体为推荐使用
