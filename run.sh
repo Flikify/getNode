@@ -12,7 +12,6 @@ if [ ! -f "./v2ray.txt" ];then
 fi
 echo get subscribe
 wget $subscribeclash -O ./clash.yaml
-wget $subscribeclash -O ./test.yaml
 wget $subscribeV2ray -O ./v2ray.txt
 echo get subscribe sucessfully
 echo hope you have a good day~
