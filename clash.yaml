@@ -5,27 +5,19 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇩🇪 _DE_德国, server: 5.104.108.109, port: 443, client-fingerprint: chrome, type: trojan, password: 6504a551-673d-44d6-85a9-b05f67fdf971, sni: 20-24-33-134.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇺🇸 _CN_中国->🇺🇸_US_美国, server: bjcu.xzyunjiasu.icu, port: 33952, client-fingerprint: chrome, type: ss, cipher: aes-256-gcm, password: 5c8b210a-2f00-4292-964b-05281c7ad5d1, tfo: false}
-  - {name: 🇺🇸 _US_美国_1, server: 94.131.13.159, port: 16128, client-fingerprint: chrome, type: trojan, password: zwbdPys6Va, sni: vpnallpha.online, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国_1, server: ld2.shabijichang.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_2, server: cf-lt.sharecentre.online, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3d761afc-6dfd-49d9-9d0f-b79341391f26, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: cf-lt.sharecentre.online}}}
-  - {name: _AF_阿富汗, server: 121.127.46.147, port: 989, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3, tfo: false}
-  - {name: 🇫🇷 _FR_法国, server: 51.255.49.192, port: 443, client-fingerprint: chrome, type: trojan, password: 4cc790bf-3545-4892-944b-76bfe1e6e310, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_3, server: sbl2.shabijichang.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国->🇧🇷_BR_巴西, server: sbl4.shabijichang.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl4.shabijichang.com}}}
-  - {name: 🇫🇮 _FI_芬兰_1, server: 37.143.129.56, port: 443, client-fingerprint: chrome, type: trojan, password: 44c5578a7c, sni: fi1.connecton.surf, skip-cert-verify: false}
-  - {name: 🇫🇮 _FI_芬兰_2, server: fi1.connecton.surf, port: 443, client-fingerprint: chrome, type: trojan, password: 44c5578a7c, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇬🇧_GB_英国_2, server: mrb2.shabijichang.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mrb2.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_4, server: 209.216.77.26, port: 443, client-fingerprint: chrome, type: trojan, password: 1b491c39f3, sni: usa3.connecton.surf, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国_5, server: 89.187.181.179, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, tfo: false}
-  - {name: 🇨🇭 _CH_瑞士, server: 84.17.53.163, port: 80, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, tfo: false}
-  - {name: 🇵🇰 _PK_巴基斯坦, server: jp1-reality.fp3kemyh-cm4s-2hak-2gb9-w3534umy2sq5.9d8f269f96b25232-759cbb36d6548597.kaufen, port: 443, client-fingerprint: chrome, type: trojan, password: 4e9451c6-0678-4e37-acc9-8afcc39451c5, sni: 13-231-155-134.nhost.00cdn.com, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇮🇳_IN_印度, server: mm3.shabijichang.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: mm3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_6, server: 195.123.240.170, port: 41916, client-fingerprint: chrome, type: vmess, uuid: 12772df9-485f-413c-edbf-3f562d61de4e, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false}
-  - {name: 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯, server: jd3.shabijichang.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: jd3.shabijichang.com}}}
-  - {name: 🇺🇸 _US_美国_7, server: 162.159.135.234, port: 443, client-fingerprint: chrome, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: linkvws}}
-  - {name: 🇺🇸 _US_美国_8, server: ns1.v2-vip.fun, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3d761afc-6dfd-49d9-9d0f-b79341391f26, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ns1.v2-vip.fun}}}
+  - {name: 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443, server: 13.213.46.196, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333, server: 54.199.83.239, port: 2333, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: doub.io, tfo: false}
+  - {name: 🇸🇬 新加坡-0-0-ss-54.251.168.143:443, server: 54.251.168.143, port: 443, client-fingerprint: chrome, type: ss, cipher: aes-256-cfb, password: amazonskr05, tfo: false}
+  - {name: 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818, server: wqfuinwqffq.dfcloud.xyz, port: 30818, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: 8e949d75-3510-4678-8593-3c5032dd931a, tfo: false}
+  - {name: 0-0-内网IP-ss-s400l.ddns1.pw:26001, server: s400l.ddns1.pw, port: 26001, client-fingerprint: chrome, type: ss, cipher: chacha20-ietf-poly1305, password: dc49f295-653a-4f3c-84d5-8626d6b3efde, tfo: false}
+  - {name: 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095, server: xt.ylks01.eu.org, port: 2095, client-fingerprint: chrome, type: vmess, uuid: b710770a-fdaf-41fb-bbe4-68a6c41e2605, alterId: 4, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /blue, headers: {Host: xt.ylks01.eu.org}}}
+  - {name: 0-0-内网IP-v2ray-aaaa.wxx.gay:443, server: aaaa.wxx.gay, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8237ec34-143a-11ee-8019-000017022008, alterId: 4, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /look, headers: {Host: aaaa.wxx.gay}}}
+  - {name: 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80, server: 159.223.94.156, port: 80, client-fingerprint: chrome, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 4, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /anti13.zingfast.vn}}
+  - {name: 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443, server: hkd1.quickerlink.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 4, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /h6jr23x9h3lqiitg, headers: {Host: hkd1.quickerlink.xyz}}}
+  - {name: 🇺🇸 美国-0-0-v2ray-51.158.98.130:443, server: 51.158.98.130, port: 443, client-fingerprint: chrome, type: vmess, uuid: 8ec62dcf-9ead-48d6-afec-4aa4ed264a95, alterId: 4, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /}}
+  - {name: 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443, server: jp1.quickerlink.xyz, port: 443, client-fingerprint: chrome, type: vmess, uuid: 3853a2ab-6bec-4503-89b9-d3cbcc6b69c9, alterId: 4, cipher: auto, tls: true, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /pxqdjmdjm74qrnwo, headers: {Host: jp1.quickerlink.xyz}}}
+  - {name: 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80, server: 141.145.196.253, port: 80, client-fingerprint: chrome, type: vmess, uuid: e9ee407f-2500-3e9d-bc00-26722f99ed06, alterId: 4, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /v2ray}}
+  - {name: 0-0-内网IP-v2ray-sg4.zingfast.vn:80, server: sg4.zingfast.vn, port: 80, client-fingerprint: chrome, type: vmess, uuid: 533724ad-58ef-4147-88dc-9da523c15fc4, alterId: 4, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /anti13.zingfast.vn, headers: {Host: sg4.zingfast.vn}}}
   - {name: "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9", server: sbl2.shabijichang.com, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl2.shabijichang.com}}}
   - {name: "🇺🇸 0,3,6|🇺🇸_US_美国 #7", server: cf-lt.sharecentre.online, port: 80, client-fingerprint: chrome, type: vmess, uuid: 3d761afc-6dfd-49d9-9d0f-b79341391f26, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /api/v3/download.getFile, headers: {Host: ssrsub.v006.ssrsub.com}}}
   - {name: "🇺🇸 0,3|🇺🇸 _US_美国 #10", server: 104.21.75.246, port: 80, client-fingerprint: chrome, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, tfo: false, skip-cert-verify: false, network: ws, ws-opts: {path: /, headers: {Host: sbl2.shabijichang.com}}}
@@ -249,27 +241,19 @@ proxy-groups:
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
@@ -492,27 +476,19 @@ proxy-groups:
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
@@ -736,27 +712,19 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
@@ -992,27 +960,19 @@ proxy-groups:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
@@ -1234,6 +1194,7 @@ proxy-groups:
     type: select
     proxies:
       - 🎯 全球直连
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
       - 🇭🇰 9|🇭🇰香港04 PRO
       - 🇭🇰 9|🇭🇰香港05
       - 🇭🇰 9|🇭🇰香港06
@@ -1261,27 +1222,19 @@ proxy-groups:
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
@@ -1504,27 +1457,19 @@ proxy-groups:
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
@@ -1748,27 +1693,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
@@ -2001,27 +1938,19 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇩🇪 _DE_德国
-      - 🇺🇸 _CN_中国->🇺🇸_US_美国
-      - 🇺🇸 _US_美国_1
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_1
-      - 🇺🇸 _US_美国_2
-      - _AF_阿富汗
-      - 🇫🇷 _FR_法国
-      - 🇺🇸 _US_美国_3
-      - 🇺🇸 _US_美国->🇧🇷_BR_巴西
-      - 🇫🇮 _FI_芬兰_1
-      - 🇫🇮 _FI_芬兰_2
-      - 🇺🇸 _US_美国->🇬🇧_GB_英国_2
-      - 🇺🇸 _US_美国_4
-      - 🇺🇸 _US_美国_5
-      - 🇨🇭 _CH_瑞士
-      - 🇵🇰 _PK_巴基斯坦
-      - 🇺🇸 _US_美国->🇮🇳_IN_印度
-      - 🇺🇸 _US_美国_6
-      - 🇺🇸 _US_美国->🇸🇦_SA_沙特阿拉伯
-      - 🇺🇸 _US_美国_7
-      - 🇺🇸 _US_美国_8
+      - 🇺🇸 美国-康涅狄格-0-ss-13.213.46.196:443
+      - 🇯🇵 日本-东京都-东京-ss-54.199.83.239:2333
+      - 🇸🇬 新加坡-0-0-ss-54.251.168.143:443
+      - 0-0-内网IP-ss-wqfuinwqffq.dfcloud.xyz:30818
+      - 0-0-内网IP-ss-s400l.ddns1.pw:26001
+      - 0-0-内网IP-v2ray-xt.ylks01.eu.org:2095
+      - 0-0-内网IP-v2ray-aaaa.wxx.gay:443
+      - 🇺🇸 美国-德克萨斯-0-v2ray-159.223.94.156:80
+      - 0-0-内网IP-v2ray-hkd1.quickerlink.xyz:443
+      - 🇺🇸 美国-0-0-v2ray-51.158.98.130:443
+      - 0-0-内网IP-v2ray-jp1.quickerlink.xyz:443
+      - 🇳🇴 挪威-0-0-v2ray-141.145.196.253:80
+      - 0-0-内网IP-v2ray-sg4.zingfast.vn:80
       - "🇺🇸 0,2,3,4,6|🇺🇸_US_美国 #9"
       - "🇺🇸 0,3,6|🇺🇸_US_美国 #7"
       - "🇺🇸 0,3|🇺🇸 _US_美国 #10"
