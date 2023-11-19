@@ -24,7 +24,6 @@ proxies:
   - {name: SG_17 |29.16Mb, server: 139.162.41.174, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D, tfo: false, udp: true}
   - {name: US_46 |22.05Mb, server: octavi.cfd, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, servername: octavi.cfd, network: ws, ws-opts: {path: linkvws, headers: {Host: octavi.cfd}}, udp: true}
   - {name: US_48 |47.22Mb, server: 23.108.100.103, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, tfo: false, skip-cert-verify: true, network: ws, ws-opts: {path: /footers}, udp: true}
-  - {name: "NULL", server: "NULL", port: 11708, type: ssr, cipher: aes-256-cfb, password: "sEscPBiAD9K$&@79", protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: "", udp: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
@@ -40,7 +39,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
@@ -55,7 +53,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
   - name: 🎥 NETFLIX
     type: select
     proxies:
@@ -71,7 +68,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
   - name: ⛔️ 广告拦截
     type: select
     proxies:
@@ -99,7 +95,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
   - name: 🌏 国内媒体
     type: select
     proxies:
@@ -119,7 +114,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
   - name: 📲 电报信息
     type: select
     proxies:
@@ -134,7 +128,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
   - name: 🍎 苹果服务
     type: select
     proxies:
@@ -150,7 +143,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -175,7 +167,6 @@ proxy-groups:
       - SG_17 |29.16Mb
       - US_46 |22.05Mb
       - US_48 |47.22Mb
-      - "NULL"
 rules:
   - DOMAIN-SUFFIX,local,🎯 全球直连
   - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
