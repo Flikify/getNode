@@ -8,8 +8,9 @@ hosts:
   .googleapis.cn: 142.250.196.131
   .google.cn: 142.250.196.131
 proxies:
-  - {name: "[SS] 乌克兰 V2CROSS.COM", server: 94.131.111.32, port: 8388, type: ss, cipher: chacha20-ietf-poly1305, password: NGQzMzQz, udp: true}
+  - {name: "[Trojan] 亚太地区 V2CROSS.COM", server: sst.onlineweb.work, port: 443, type: trojan, password: da0d870c-6545-4866-8591-3cdebf00f546, sni: sst.onlineweb.work, skip-cert-verify: true, udp: true}
   - {name: "[VMess] 卢旺达 001", server: 197.243.57.239, port: 22222, type: vmess, uuid: e4c9dc48-f9dc-4d9b-9318-a3933d113736, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 广东省江门市 移动", server: ddns.olucloud.subapi.cc, port: 20009, type: ss, cipher: chacha20-ietf-poly1305, password: cfa17a0d-5e7d-4871-976e-f116e0818123, udp: true}
   - {name: "[Trojan] 🇦🇺 澳大利亚 001", server: 192.65.217.247, port: 443, type: trojan, password: b59ee60f-9fa4-4770-b6a7-288620147f60, sni: k5us2.yfjc.sbs, skip-cert-verify: true, network: ws, ws-opts: {path: /yfjc/kus2, headers: {Host: k5us2.yfjc.sbs}}, udp: true}
   - {name: "[VMess] 🇨🇦 _CA_加拿大", server: 108.181.10.17, port: 80, type: vmess, uuid: 474e8680-701f-11ee-b436-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: "[VMess] 🇨🇦 加拿大 001", server: 104.18.202.250, port: 2082, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /nina.bond/linkvws, headers: {Host: erfannewfreenodes.vdmmswyzmzigonvnjk443.workers.dev}}, udp: true}
@@ -37,9 +38,6 @@ proxies:
   - {name: "[VMess] 🇨🇦 加拿大 023", server: 198.41.221.169, port: 443, type: vmess, uuid: a8910831-f56b-4ac4-c68f-e4dd83f71e60, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /sakura/, headers: {Host: zero1.a-yu.xyz}}, udp: true}
   - {name: "[SS] 🇨🇭 _CH_瑞士", server: 84.17.53.163, port: 80, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
   - {name: "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国", server: 107.167.182.230, port: 80, type: vmess, uuid: efcb7d7c-c582-46f5-eeff-0e553342528d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg@hkaa0}, udp: true}
-  - {name: "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)", server: ty11t.twty.dynu.net, port: 13761, type: trojan, password: 661ee645-8e3f-42ab-9e60-a19d5e7a89eb, sni: ty11t.twty.dynu.net, skip-cert-verify: true, udp: true}
-  - {name: "[SS] 🇨🇳 广东省广州市 电信IDC机房", server: tw1.indianonlinejob2.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: a7fe5385-1777-4e29-9e0a-fa59efb2f5c3, udp: true}
-  - {name: "[SS] 🇨🇳 江苏省 移动", server: jp01.jjjjjj.icu, port: 30207, type: ss, cipher: chacha20-ietf-poly1305, password: 949f7542-7240-43ba-a3cc-dcf7c7b2e6b7, udp: true}
   - {name: "[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国", server: flkf2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: flkf2.shabijichang.com}}, udp: true}
   - {name: "[VMess] 🇩🇪 德国 001", server: 49.13.152.58, port: 17425, type: vmess, uuid: 3bd8b1a7-244e-40b1-8686-e262c2cb239f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[VMess] 🇩🇪 德国 002", server: 195.201.29.238, port: 24208, type: vmess, uuid: 1d244b9d-ce0f-49d5-99fd-da3f1e80ee59, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
@@ -51,6 +49,7 @@ proxies:
   - {name: "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2", server: 104.26.8.44, port: 80, type: vmess, uuid: 5180444a-4756-43b4-960b-49eb9052e4e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
   - {name: "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3", server: mm2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mm2.shabijichang.com}}, udp: true}
   - {name: "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4", server: mm3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mm3.shabijichang.com}}, udp: true}
+  - {name: "[VMess] 🇮🇳 印度 V2CROSS.COM", server: 202.78.162.5, port: 443, type: vmess, uuid: 716eded6-2201-4dbd-9d63-1638c9e8e677, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: pendar.onthewifi.com}}, udp: true}
   - {name: "[VMess] 🇮🇷 伊朗 001", server: 85.133.199.40, port: 12770, type: vmess, uuid: 4e6d3bc1-4ac1-4d40-b6a8-12fec89ba5f6, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[VMess] 🇯🇵 日本 001", server: japan.pxiz.site, port: 54752, type: vmess, uuid: 2da64de4-54d0-4611-ab16-3401a8d16f0c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: baidu.com}}, udp: true}
   - {name: "[VMess] 🇯🇵 日本 002", server: 18.179.17.59, port: 21583, type: vmess, uuid: 65cdb2a2-ac65-3dc6-992d-a58b8cb996b9, alterId: 1, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
@@ -74,7 +73,6 @@ proxies:
   - {name: "[VMess] 🇷🇺 俄罗斯 002", server: 185.221.160.163, port: 443, type: vmess, uuid: 03fcc618-b93d-6796-6aed-8a38c975d581, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /kellie.makeup/linkvws, headers: {Host: worker-lingering-fog-c021.gesofog870.workers.dev}}, udp: true}
   - {name: "[SS] 🇷🇺 俄罗斯 V2CROSS.COM", server: 185.242.86.156, port: 54170, type: ss, cipher: chacha20-ietf-poly1305, password: 36ZCHeabUSfKjfQEvJ4HDV, udp: true}
   - {name: "[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯", server: jd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: jd3.shabijichang.com}}, udp: true}
-  - {name: "[SS] 🇸🇪 瑞典 V2CROSS.COM", server: 167.88.61.175, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC, udp: true}
   - {name: "[VMess] 🇸🇬 新加坡 001", server: 66.42.55.85, port: 443, type: vmess, uuid: 0e0f8e06-3ae6-4889-9bf8-6d744b57369f, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, udp: true}
   - {name: "[Trojan] 🇸🇬 新加坡 002", server: 13.250.127.244, port: 23331, type: trojan, password: mikuu404, sni: bing.com, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: bing.com}}, udp: true}
   - {name: "[VMess] 🇺🇸 _US_美国_1", server: 206.168.190.219, port: 2082, type: vmess, uuid: e31ca750-71f7-11ee-b920-1239d0255272, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /vmws}, udp: true}
@@ -132,15 +130,15 @@ proxies:
   - {name: "[VMess] 🇺🇸 美国 048", server: 137.175.5.120, port: 37000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/153428133302, headers: {Host: www.99555130.xyz}}, udp: true}
   - {name: "[VMess] 🇺🇸 美国 049", server: 142.171.186.88, port: 443, type: vmess, uuid: a9abf3e7-87f4-473d-8d03-2f26ca4b3583, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/153428133302, headers: {Host: www.49175366.xyz}}, udp: true}
   - {name: "[VMess] 🇺🇸 美国 050", server: 47.76.80.72, port: 2053, type: vmess, uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, servername: cfhk.393930.xyz, network: ws, ws-opts: {path: /, headers: {Host: cfhk.393930.xyz}}, udp: true}
-  - {name: "[Trojan] 🇺🇸 美国 Amazon数据中心", server: 18.225.17.254, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.miwan.co.uk, skip-cert-verify: true, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: 104.21.69.44, port: 80, type: vmess, uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: a.prapt4.ir}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 2", server: 104.21.23.231, port: 2052, type: vmess, uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: onea.flha.ru}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 3", server: us65.netfilx.live, port: 80, type: vmess, uuid: 60f12435-bb55-4da2-cb7d-4fea34ecfa37, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: us65.netfilx.live}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 4", server: 162.159.136.253, port: 8080, type: vmess, uuid: ade73e62-7554-40a8-9314-195a372bae28, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/7bFcoRZS?ed=2048", headers: {Host: xentain.kmoljklj.top}}, udp: true}
+  - {name: "[SS] 🇺🇸 美国 Amazon数据中心", server: java.ct.arvancode.eu.Org, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: W74XFALLLuw6m5IA, udp: true}
+  - {name: "[Trojan] 🇺🇸 美国 CloudFlare节点", server: 104.19.171.3, port: 443, type: trojan, password: f0eb8c92ce8946aaba856569cff1a16b, sni: sherasheba.com, skip-cert-verify: true, network: ws, ws-opts: {path: 6b777a91, headers: {Host: sherasheba.com}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: www.velvetmountain.shop, port: 8080, type: vmess, uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: www.velvetmountain.shop}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 2", server: 172.67.130.140, port: 2082, type: vmess, uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: s1c.v2.v001sss.xyz}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 3", server: 172.67.169.158, port: 8080, type: vmess, uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: fr-01.cloudlion.me}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 4", server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
   - {name: "[VMess] 🇺🇸 美国 Fastly全球Anycast节点", server: 151.101.193.57, port: 80, type: vmess, uuid: 66ccb11f-75a7-4282-8a60-31fed447401d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: "/aries?ed=2048", headers: {Host: nmsl.kp}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 V2CROSS.COM", server: 137.175.26.18, port: 36000, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/153428133302, headers: {Host: www.70173865.xyz}}, udp: true}
-  - {name: "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心", server: 35.177.103.94, port: 16139, type: trojan, password: iGRbg66agcRf, sni: appsvs.shop, skip-cert-verify: true, udp: true}
   - {name: "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学", server: 144.126.225.255, port: 2096, type: trojan, password: JOIN-ZEDMODEON, skip-cert-verify: true, udp: true}
+  - {name: "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3", server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
 proxy-groups:
   - name: 🚀 全球互联
     type: select
@@ -154,8 +152,9 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
-      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[Trojan] 亚太地区 V2CROSS.COM"
       - "[VMess] 卢旺达 001"
+      - "[SS] 广东省江门市 移动"
       - "[Trojan] 🇦🇺 澳大利亚 001"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[VMess] 🇨🇦 加拿大 001"
@@ -183,9 +182,6 @@ proxy-groups:
       - "[VMess] 🇨🇦 加拿大 023"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[SS] 🇨🇳 广东省广州市 电信IDC机房"
-      - "[SS] 🇨🇳 江苏省 移动"
       - "[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国"
       - "[VMess] 🇩🇪 德国 001"
       - "[VMess] 🇩🇪 德国 002"
@@ -197,6 +193,7 @@ proxy-groups:
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4"
+      - "[VMess] 🇮🇳 印度 V2CROSS.COM"
       - "[VMess] 🇮🇷 伊朗 001"
       - "[VMess] 🇯🇵 日本 001"
       - "[VMess] 🇯🇵 日本 002"
@@ -220,7 +217,6 @@ proxy-groups:
       - "[VMess] 🇷🇺 俄罗斯 002"
       - "[SS] 🇷🇺 俄罗斯 V2CROSS.COM"
       - "[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯"
-      - "[SS] 🇸🇪 瑞典 V2CROSS.COM"
       - "[VMess] 🇸🇬 新加坡 001"
       - "[Trojan] 🇸🇬 新加坡 002"
       - "[VMess] 🇺🇸 _US_美国_1"
@@ -278,15 +274,15 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 048"
       - "[VMess] 🇺🇸 美国 049"
       - "[VMess] 🇺🇸 美国 050"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
+      - "[SS] 🇺🇸 美国 Amazon数据中心"
+      - "[Trojan] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
       - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
-      - "[VMess] 🇺🇸 美国 V2CROSS.COM"
-      - "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心"
       - "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学"
+      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
   - name: 🎥 Netflix
     type: select
     proxies:
@@ -295,8 +291,9 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
-      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[Trojan] 亚太地区 V2CROSS.COM"
       - "[VMess] 卢旺达 001"
+      - "[SS] 广东省江门市 移动"
       - "[Trojan] 🇦🇺 澳大利亚 001"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[VMess] 🇨🇦 加拿大 001"
@@ -324,9 +321,6 @@ proxy-groups:
       - "[VMess] 🇨🇦 加拿大 023"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[SS] 🇨🇳 广东省广州市 电信IDC机房"
-      - "[SS] 🇨🇳 江苏省 移动"
       - "[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国"
       - "[VMess] 🇩🇪 德国 001"
       - "[VMess] 🇩🇪 德国 002"
@@ -338,6 +332,7 @@ proxy-groups:
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4"
+      - "[VMess] 🇮🇳 印度 V2CROSS.COM"
       - "[VMess] 🇮🇷 伊朗 001"
       - "[VMess] 🇯🇵 日本 001"
       - "[VMess] 🇯🇵 日本 002"
@@ -361,7 +356,6 @@ proxy-groups:
       - "[VMess] 🇷🇺 俄罗斯 002"
       - "[SS] 🇷🇺 俄罗斯 V2CROSS.COM"
       - "[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯"
-      - "[SS] 🇸🇪 瑞典 V2CROSS.COM"
       - "[VMess] 🇸🇬 新加坡 001"
       - "[Trojan] 🇸🇬 新加坡 002"
       - "[VMess] 🇺🇸 _US_美国_1"
@@ -419,15 +413,15 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 048"
       - "[VMess] 🇺🇸 美国 049"
       - "[VMess] 🇺🇸 美国 050"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
+      - "[SS] 🇺🇸 美国 Amazon数据中心"
+      - "[Trojan] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
       - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
-      - "[VMess] 🇺🇸 美国 V2CROSS.COM"
-      - "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心"
       - "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学"
+      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
   - name: 📹 Youtube
     type: select
     proxies:
@@ -436,8 +430,9 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
-      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[Trojan] 亚太地区 V2CROSS.COM"
       - "[VMess] 卢旺达 001"
+      - "[SS] 广东省江门市 移动"
       - "[Trojan] 🇦🇺 澳大利亚 001"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[VMess] 🇨🇦 加拿大 001"
@@ -465,9 +460,6 @@ proxy-groups:
       - "[VMess] 🇨🇦 加拿大 023"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[SS] 🇨🇳 广东省广州市 电信IDC机房"
-      - "[SS] 🇨🇳 江苏省 移动"
       - "[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国"
       - "[VMess] 🇩🇪 德国 001"
       - "[VMess] 🇩🇪 德国 002"
@@ -479,6 +471,7 @@ proxy-groups:
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4"
+      - "[VMess] 🇮🇳 印度 V2CROSS.COM"
       - "[VMess] 🇮🇷 伊朗 001"
       - "[VMess] 🇯🇵 日本 001"
       - "[VMess] 🇯🇵 日本 002"
@@ -502,7 +495,6 @@ proxy-groups:
       - "[VMess] 🇷🇺 俄罗斯 002"
       - "[SS] 🇷🇺 俄罗斯 V2CROSS.COM"
       - "[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯"
-      - "[SS] 🇸🇪 瑞典 V2CROSS.COM"
       - "[VMess] 🇸🇬 新加坡 001"
       - "[Trojan] 🇸🇬 新加坡 002"
       - "[VMess] 🇺🇸 _US_美国_1"
@@ -560,15 +552,15 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 048"
       - "[VMess] 🇺🇸 美国 049"
       - "[VMess] 🇺🇸 美国 050"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
+      - "[SS] 🇺🇸 美国 Amazon数据中心"
+      - "[Trojan] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
       - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
-      - "[VMess] 🇺🇸 美国 V2CROSS.COM"
-      - "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心"
       - "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学"
+      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
   - name: ▶️ Disney+
     type: select
     proxies:
@@ -577,8 +569,9 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
-      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[Trojan] 亚太地区 V2CROSS.COM"
       - "[VMess] 卢旺达 001"
+      - "[SS] 广东省江门市 移动"
       - "[Trojan] 🇦🇺 澳大利亚 001"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[VMess] 🇨🇦 加拿大 001"
@@ -606,9 +599,6 @@ proxy-groups:
       - "[VMess] 🇨🇦 加拿大 023"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[SS] 🇨🇳 广东省广州市 电信IDC机房"
-      - "[SS] 🇨🇳 江苏省 移动"
       - "[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国"
       - "[VMess] 🇩🇪 德国 001"
       - "[VMess] 🇩🇪 德国 002"
@@ -620,6 +610,7 @@ proxy-groups:
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4"
+      - "[VMess] 🇮🇳 印度 V2CROSS.COM"
       - "[VMess] 🇮🇷 伊朗 001"
       - "[VMess] 🇯🇵 日本 001"
       - "[VMess] 🇯🇵 日本 002"
@@ -643,7 +634,6 @@ proxy-groups:
       - "[VMess] 🇷🇺 俄罗斯 002"
       - "[SS] 🇷🇺 俄罗斯 V2CROSS.COM"
       - "[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯"
-      - "[SS] 🇸🇪 瑞典 V2CROSS.COM"
       - "[VMess] 🇸🇬 新加坡 001"
       - "[Trojan] 🇸🇬 新加坡 002"
       - "[VMess] 🇺🇸 _US_美国_1"
@@ -701,15 +691,15 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 048"
       - "[VMess] 🇺🇸 美国 049"
       - "[VMess] 🇺🇸 美国 050"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
+      - "[SS] 🇺🇸 美国 Amazon数据中心"
+      - "[Trojan] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
       - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
-      - "[VMess] 🇺🇸 美国 V2CROSS.COM"
-      - "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心"
       - "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学"
+      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -719,8 +709,9 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
-      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[Trojan] 亚太地区 V2CROSS.COM"
       - "[VMess] 卢旺达 001"
+      - "[SS] 广东省江门市 移动"
       - "[Trojan] 🇦🇺 澳大利亚 001"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[VMess] 🇨🇦 加拿大 001"
@@ -748,9 +739,6 @@ proxy-groups:
       - "[VMess] 🇨🇦 加拿大 023"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[SS] 🇨🇳 广东省广州市 电信IDC机房"
-      - "[SS] 🇨🇳 江苏省 移动"
       - "[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国"
       - "[VMess] 🇩🇪 德国 001"
       - "[VMess] 🇩🇪 德国 002"
@@ -762,6 +750,7 @@ proxy-groups:
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4"
+      - "[VMess] 🇮🇳 印度 V2CROSS.COM"
       - "[VMess] 🇮🇷 伊朗 001"
       - "[VMess] 🇯🇵 日本 001"
       - "[VMess] 🇯🇵 日本 002"
@@ -785,7 +774,6 @@ proxy-groups:
       - "[VMess] 🇷🇺 俄罗斯 002"
       - "[SS] 🇷🇺 俄罗斯 V2CROSS.COM"
       - "[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯"
-      - "[SS] 🇸🇪 瑞典 V2CROSS.COM"
       - "[VMess] 🇸🇬 新加坡 001"
       - "[Trojan] 🇸🇬 新加坡 002"
       - "[VMess] 🇺🇸 _US_美国_1"
@@ -843,15 +831,15 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 048"
       - "[VMess] 🇺🇸 美国 049"
       - "[VMess] 🇺🇸 美国 050"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
+      - "[SS] 🇺🇸 美国 Amazon数据中心"
+      - "[Trojan] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
       - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
-      - "[VMess] 🇺🇸 美国 V2CROSS.COM"
-      - "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心"
       - "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学"
+      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
   - name: 📲 Telegram
     type: select
     proxies:
@@ -866,7 +854,6 @@ proxy-groups:
     proxies:
       - DIRECT
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
       - "[VMess] 🇭🇰 香港 001"
   - name: Ⓜ️ 微软服务
     type: select
@@ -877,8 +864,9 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
-      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[Trojan] 亚太地区 V2CROSS.COM"
       - "[VMess] 卢旺达 001"
+      - "[SS] 广东省江门市 移动"
       - "[Trojan] 🇦🇺 澳大利亚 001"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[VMess] 🇨🇦 加拿大 001"
@@ -906,9 +894,6 @@ proxy-groups:
       - "[VMess] 🇨🇦 加拿大 023"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
-      - "[SS] 🇨🇳 广东省广州市 电信IDC机房"
-      - "[SS] 🇨🇳 江苏省 移动"
       - "[VMess] 🇩🇪 _US_美国->🇩🇪_DE_德国"
       - "[VMess] 🇩🇪 德国 001"
       - "[VMess] 🇩🇪 德国 002"
@@ -920,6 +905,7 @@ proxy-groups:
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_3"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_4"
+      - "[VMess] 🇮🇳 印度 V2CROSS.COM"
       - "[VMess] 🇮🇷 伊朗 001"
       - "[VMess] 🇯🇵 日本 001"
       - "[VMess] 🇯🇵 日本 002"
@@ -943,7 +929,6 @@ proxy-groups:
       - "[VMess] 🇷🇺 俄罗斯 002"
       - "[SS] 🇷🇺 俄罗斯 V2CROSS.COM"
       - "[VMess] 🇸🇦 _US_美国->🇸🇦_SA_沙特阿拉伯"
-      - "[SS] 🇸🇪 瑞典 V2CROSS.COM"
       - "[VMess] 🇸🇬 新加坡 001"
       - "[Trojan] 🇸🇬 新加坡 002"
       - "[VMess] 🇺🇸 _US_美国_1"
@@ -1001,15 +986,15 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 048"
       - "[VMess] 🇺🇸 美国 049"
       - "[VMess] 🇺🇸 美国 050"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
+      - "[SS] 🇺🇸 美国 Amazon数据中心"
+      - "[Trojan] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
       - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
-      - "[VMess] 🇺🇸 美国 V2CROSS.COM"
-      - "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心"
       - "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学"
+      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
   - name: 🇭🇰 香港
     type: select
     proxies:
@@ -1091,20 +1076,19 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 048"
       - "[VMess] 🇺🇸 美国 049"
       - "[VMess] 🇺🇸 美国 050"
-      - "[Trojan] 🇺🇸 美国 Amazon数据中心"
+      - "[SS] 🇺🇸 美国 Amazon数据中心"
+      - "[Trojan] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
       - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
-      - "[VMess] 🇺🇸 美国 V2CROSS.COM"
-      - "[Trojan] 🇺🇸 美国 华盛顿州西雅图市亚马逊(Amazon)公司数据中心"
       - "[Trojan] 🇺🇸 美国 马里兰州罗耀拉大学"
+      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
   - name: 🇹🇼 台湾
     type: select
     proxies:
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
-      - "[Trojan] 🇨🇳 台湾省桃园市 中华电信(HiNet)"
   - name: 🇸🇬 新加坡
     type: select
     proxies:
