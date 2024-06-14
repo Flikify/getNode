@@ -97,7 +97,8 @@ proxies:
   - {name: "[VMess] 🇩🇪 德国 006", server: 172.64.26.154, port: 2095, type: vmess, uuid: 2be5f070-1c5e-359f-a6e6-f2499bfc6c54, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, servername: 100-100-17-468.db-link02.top, network: ws, ws-opts: {path: /dabai.in172.64.26.154}, udp: true}
   - {name: "[SS] 🇫🇷 _FR_法国", server: 51.158.54.209, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
   - {name: "[SS] 🇫🇷 法国 OVH", server: 51.77.53.200, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: "[SS] 🇫🇷 法国 OVH 2", server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
+  - {name: "[SS] 🇫🇷 法国 OVH 2", server: 51.77.53.200, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY, udp: true}
+  - {name: "[SS] 🇫🇷 法国 OVH 3", server: 51.77.53.200, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4, udp: true}
   - {name: "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1", server: mrb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mrb2.shabijichang.com}}, udp: true}
   - {name: "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2", server: ld2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}, udp: true}
   - {name: "[Trojan] 🇭🇰 香港 017", server: 8.210.164.75, port: 2083, type: trojan, password: 0fd9b883-0551-4ed1-b978-528183b459a2, sni: mfjd.591haoka.com, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io", headers: {Host: mfjd.591haoka.com}}, udp: true}
@@ -129,7 +130,6 @@ proxies:
   - {name: "[VMess] 🇺🇸 美国 047", server: pa.wqfe1.xyz, port: 16617, type: vmess, uuid: ecf05dec-37cc-484d-b0fe-87ae087d263f, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /cctv3/hd.m3u8, headers: {Host: pa.wqfe1.xyz}}, udp: true}
   - {name: "[Trojan] 🇺🇸 美国 048", server: 47.76.77.103, port: 2087, type: trojan, password: 0fd9b883-0551-4ed1-b978-528183b459a2, sni: mfjd.591haoka.com, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2560&proxyIP=proxyip.hk.fxxk.dedyn.io", headers: {Host: mfjd.591haoka.com}}, udp: true}
   - {name: "[Trojan] 🇺🇸 美国 CloudFlare节点", server: 104.19.53.95, port: 8443, type: trojan, password: 8557692d-c228-48f0-b6f9-50d44d4a2096, sni: tjjd.yzyx1.v6.army, skip-cert-verify: true, network: ws, ws-opts: {path: "/?ed=2048", headers: {Host: tjjd.yzyx1.v6.army}}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: cfcdn3.sanfencdn9.com, port: 2052, type: vmess, uuid: 3c5046b4-1a9c-427c-8a55-e355846a9e4a, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /video/Zo98PYfE, headers: {Host: kvjqqknzjp6.yofnhkfc.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 全球互联
     type: select
@@ -233,6 +233,7 @@ proxy-groups:
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
       - "[SS] 🇫🇷 法国 OVH 2"
+      - "[SS] 🇫🇷 法国 OVH 3"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[Trojan] 🇭🇰 香港 017"
@@ -264,7 +265,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 047"
       - "[Trojan] 🇺🇸 美国 048"
       - "[Trojan] 🇺🇸 美国 CloudFlare节点"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🎥 Netflix
     type: select
     proxies:
@@ -363,6 +363,7 @@ proxy-groups:
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
       - "[SS] 🇫🇷 法国 OVH 2"
+      - "[SS] 🇫🇷 法国 OVH 3"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[Trojan] 🇭🇰 香港 017"
@@ -394,7 +395,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 047"
       - "[Trojan] 🇺🇸 美国 048"
       - "[Trojan] 🇺🇸 美国 CloudFlare节点"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 📹 Youtube
     type: select
     proxies:
@@ -493,6 +493,7 @@ proxy-groups:
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
       - "[SS] 🇫🇷 法国 OVH 2"
+      - "[SS] 🇫🇷 法国 OVH 3"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[Trojan] 🇭🇰 香港 017"
@@ -524,7 +525,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 047"
       - "[Trojan] 🇺🇸 美国 048"
       - "[Trojan] 🇺🇸 美国 CloudFlare节点"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: ▶️ Disney+
     type: select
     proxies:
@@ -623,6 +623,7 @@ proxy-groups:
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
       - "[SS] 🇫🇷 法国 OVH 2"
+      - "[SS] 🇫🇷 法国 OVH 3"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[Trojan] 🇭🇰 香港 017"
@@ -654,7 +655,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 047"
       - "[Trojan] 🇺🇸 美国 048"
       - "[Trojan] 🇺🇸 美国 CloudFlare节点"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -754,6 +754,7 @@ proxy-groups:
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
       - "[SS] 🇫🇷 法国 OVH 2"
+      - "[SS] 🇫🇷 法国 OVH 3"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[Trojan] 🇭🇰 香港 017"
@@ -785,7 +786,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 047"
       - "[Trojan] 🇺🇸 美国 048"
       - "[Trojan] 🇺🇸 美国 CloudFlare节点"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 📲 Telegram
     type: select
     proxies:
@@ -904,6 +904,7 @@ proxy-groups:
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
       - "[SS] 🇫🇷 法国 OVH 2"
+      - "[SS] 🇫🇷 法国 OVH 3"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[Trojan] 🇭🇰 香港 017"
@@ -935,7 +936,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 047"
       - "[Trojan] 🇺🇸 美国 048"
       - "[Trojan] 🇺🇸 美国 CloudFlare节点"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🇭🇰 香港
     type: select
     proxies:
@@ -976,7 +976,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 047"
       - "[Trojan] 🇺🇸 美国 048"
       - "[Trojan] 🇺🇸 美国 CloudFlare节点"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🇹🇼 台湾
     type: select
     proxies:
