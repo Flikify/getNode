@@ -128,7 +128,6 @@ proxies:
   - {name: "[VMess] 🇫🇮 芬兰 2", server: 65.109.226.6, port: 2053, type: vmess, uuid: d862cdd6-3dd6-4adc-83ca-99bf0ce86bee, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: divar.ir}}, udp: true}
   - {name: "[SS] 🇫🇷 _FR_法国", server: 51.158.54.209, port: 443, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true}
   - {name: "[SS] 🇫🇷 法国 OVH", server: 51.77.53.200, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS, udp: true}
-  - {name: "[SS] 🇫🇷 法国 OVH 2", server: 51.77.53.200, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId, udp: true}
   - {name: "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1", server: mrb2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mrb2.shabijichang.com}}, udp: true}
   - {name: "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2", server: ld2.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ld2.shabijichang.com}}, udp: true}
   - {name: "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1", server: 104.17.18.26, port: 80, type: vmess, uuid: 5180444a-4756-43b4-960b-49eb9052e4e8, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
@@ -154,6 +153,7 @@ proxies:
   - {name: "[VMess] 🇺🇸 美国 024", server: 107.148.192.157, port: 41911, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[VMess] 🇺🇸 美国 031", server: 51.81.223.6, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
   - {name: "[VMess] 🇺🇸 美国 9", server: 66.42.87.125, port: 8881, type: vmess, uuid: db5afae4-ac23-41a6-8378-f307a9a47436, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, udp: true}
+  - {name: "[Trojan] 🇺🇸 美国 Amazon EC2服务器", server: 3.139.254.187, port: 22222, type: trojan, password: telegram-id-directvpn, sni: trojan.burgerip.co.uk, skip-cert-verify: true, udp: true}
   - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: fbi.gov, port: 2086, type: vmess, uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: ip002.dtku47.xyz}}, udp: true}
 proxy-groups:
   - name: 🚀 全球互联
@@ -288,7 +288,6 @@ proxy-groups:
       - "[VMess] 🇫🇮 芬兰 2"
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
-      - "[SS] 🇫🇷 法国 OVH 2"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1"
@@ -314,6 +313,7 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 024"
       - "[VMess] 🇺🇸 美国 031"
       - "[VMess] 🇺🇸 美国 9"
+      - "[Trojan] 🇺🇸 美国 Amazon EC2服务器"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🎥 Netflix
     type: select
@@ -443,7 +443,6 @@ proxy-groups:
       - "[VMess] 🇫🇮 芬兰 2"
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
-      - "[SS] 🇫🇷 法国 OVH 2"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1"
@@ -469,6 +468,7 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 024"
       - "[VMess] 🇺🇸 美国 031"
       - "[VMess] 🇺🇸 美国 9"
+      - "[Trojan] 🇺🇸 美国 Amazon EC2服务器"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 📹 Youtube
     type: select
@@ -598,7 +598,6 @@ proxy-groups:
       - "[VMess] 🇫🇮 芬兰 2"
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
-      - "[SS] 🇫🇷 法国 OVH 2"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1"
@@ -624,6 +623,7 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 024"
       - "[VMess] 🇺🇸 美国 031"
       - "[VMess] 🇺🇸 美国 9"
+      - "[Trojan] 🇺🇸 美国 Amazon EC2服务器"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: ▶️ Disney+
     type: select
@@ -753,7 +753,6 @@ proxy-groups:
       - "[VMess] 🇫🇮 芬兰 2"
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
-      - "[SS] 🇫🇷 法国 OVH 2"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1"
@@ -779,6 +778,7 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 024"
       - "[VMess] 🇺🇸 美国 031"
       - "[VMess] 🇺🇸 美国 9"
+      - "[Trojan] 🇺🇸 美国 Amazon EC2服务器"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🌍 国外媒体
     type: select
@@ -909,7 +909,6 @@ proxy-groups:
       - "[VMess] 🇫🇮 芬兰 2"
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
-      - "[SS] 🇫🇷 法国 OVH 2"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1"
@@ -935,6 +934,7 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 024"
       - "[VMess] 🇺🇸 美国 031"
       - "[VMess] 🇺🇸 美国 9"
+      - "[Trojan] 🇺🇸 美国 Amazon EC2服务器"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 📲 Telegram
     type: select
@@ -1079,7 +1079,6 @@ proxy-groups:
       - "[VMess] 🇫🇮 芬兰 2"
       - "[SS] 🇫🇷 _FR_法国"
       - "[SS] 🇫🇷 法国 OVH"
-      - "[SS] 🇫🇷 法国 OVH 2"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_1"
       - "[VMess] 🇬🇧 _US_美国->🇬🇧_GB_英国_2"
       - "[VMess] 🇮🇳 _US_美国->🇮🇳_IN_印度_1"
@@ -1105,6 +1104,7 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 024"
       - "[VMess] 🇺🇸 美国 031"
       - "[VMess] 🇺🇸 美国 9"
+      - "[Trojan] 🇺🇸 美国 Amazon EC2服务器"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🇭🇰 香港
     type: select
@@ -1137,6 +1137,7 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 024"
       - "[VMess] 🇺🇸 美国 031"
       - "[VMess] 🇺🇸 美国 9"
+      - "[Trojan] 🇺🇸 美国 Amazon EC2服务器"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
   - name: 🇹🇼 台湾
     type: select
