@@ -27,9 +27,9 @@ proxies:
   - {name: "[VMess] 🇺🇸 _US_美国_3", server: 45.199.138.186, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696682720138}, udp: true}
   - {name: "[VMess] 🇺🇸 _US_美国_4", server: wnd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wnd3.shabijichang.com}}, udp: true}
   - {name: "[VMess] 🇺🇸 _US_美国_5", server: 104.21.75.246, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: 104.21.82.183, port: 8880, type: vmess, uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server26.beheshtbaneh.com}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: server31.beheshtbaneh.com, port: 8880, type: vmess, uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: server31.beheshtbaneh.com}}, udp: true}
+  - {name: "[VMess] 🇺🇸 美国 Fastly全球Anycast节点", server: gov.uk, port: 443, type: vmess, uuid: 77848824-93b7-4b89-ffd0-e91afff406ce, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /77848824, headers: {Host: zheshiscp.com}}, udp: true}
   - {name: "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3", server: service.ouluyun9803.com, port: 20003, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
-  - {name: "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2", server: service.ouluyun9803.com, port: 20005, type: ss, cipher: chacha20-ietf-poly1305, password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2, udp: true}
 proxy-groups:
   - name: 🚀 全球互联
     type: select
@@ -63,8 +63,8 @@ proxy-groups:
       - "[VMess] 🇺🇸 _US_美国_4"
       - "[VMess] 🇺🇸 _US_美国_5"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
       - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
-      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2"
   - name: 🎥 Netflix
     type: select
     proxies:
@@ -93,8 +93,8 @@ proxy-groups:
       - "[VMess] 🇺🇸 _US_美国_4"
       - "[VMess] 🇺🇸 _US_美国_5"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
       - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
-      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2"
   - name: 📹 Youtube
     type: select
     proxies:
@@ -123,8 +123,8 @@ proxy-groups:
       - "[VMess] 🇺🇸 _US_美国_4"
       - "[VMess] 🇺🇸 _US_美国_5"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
       - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
-      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2"
   - name: ▶️ Disney+
     type: select
     proxies:
@@ -153,8 +153,8 @@ proxy-groups:
       - "[VMess] 🇺🇸 _US_美国_4"
       - "[VMess] 🇺🇸 _US_美国_5"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
       - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
-      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2"
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -184,8 +184,8 @@ proxy-groups:
       - "[VMess] 🇺🇸 _US_美国_4"
       - "[VMess] 🇺🇸 _US_美国_5"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
       - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
-      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2"
   - name: 📲 Telegram
     type: select
     proxies:
@@ -229,8 +229,8 @@ proxy-groups:
       - "[VMess] 🇺🇸 _US_美国_4"
       - "[VMess] 🇺🇸 _US_美国_5"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
       - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
-      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2"
   - name: 🇭🇰 香港
     type: select
     proxies:
@@ -258,8 +258,8 @@ proxy-groups:
       - "[VMess] 🇺🇸 _US_美国_4"
       - "[VMess] 🇺🇸 _US_美国_5"
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
+      - "[VMess] 🇺🇸 美国 Fastly全球Anycast节点"
       - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3"
-      - "[SS] 🇺🇸 美国科罗拉多州布隆菲尔德市 Level3 2"
   - name: 🇹🇼 台湾
     type: select
     proxies:
