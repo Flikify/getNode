@@ -41,4 +41,4 @@
 
 临时存储网盘：[OneDrive网盘](https://xiaobing-my.sharepoint.com/:f:/g/personal/if404_blay_tw/EjuJCuQm4DJCryNZxHi9wjsBDDJucpDVPL1OAu8Sb1OnuQ?e=BkkIJz)
 
-[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=YOUR_REPO_URL)
+[![使用 EdgeOne Pages 部署](https://cdnstatic.tencentcs.com/edgeone/pages/deploy.svg)](https://edgeone.ai/pages/new?repository-url=https://github.com/Flikify/getNode)
