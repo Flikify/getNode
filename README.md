@@ -10,6 +10,13 @@
 - v2ray源地址：https://raw.githubusercontent.com/a2470982985/getNode/main/v2ray.txt
 - v2ray加速地址1：https://ghproxy.com/https://raw.githubusercontent.com/a2470982985/getNode/main/v2ray.txt
 - v2ray加速地址2：https://cdn.jsdelivr.net/gh/a2470982985/getNode@main/v2ray.txt
+
+## 支持
+
+本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助
+![34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b](https://github.com/user-attachments/assets/d2e319f8-c6b7-4d6a-82fa-a73e783d257b)
+[亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
+
 ## 工具推荐
 
 > 加粗字体为推荐使用
@@ -40,7 +47,3 @@
 [Stair SpeedTest](https://github.com/tindy2013/stairspeedtest-reborn/releases)：批量节点检测工具，支持单链接、订阅地址，支持SS\SSR\V2ray协议
 
 临时存储网盘：[OneDrive网盘](https://xiaobing-my.sharepoint.com/:f:/g/personal/if404_blay_tw/EjuJCuQm4DJCryNZxHi9wjsBDDJucpDVPL1OAu8Sb1OnuQ?e=BkkIJz)
-
-本项目 CDN 加速及安全防护由 Tencent EdgeOne 赞助
-![34fe3a45-492d-4ea4-ae5d-ea1087ca7b4b](https://github.com/user-attachments/assets/d2e319f8-c6b7-4d6a-82fa-a73e783d257b)
-[亚洲最佳CDN、边缘和安全解决方案 - Tencent EdgeOne](https://edgeone.ai/zh?from=github)
