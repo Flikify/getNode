@@ -8,6 +8,8 @@ hosts:
   .googleapis.cn: 142.250.196.131
   .google.cn: 142.250.196.131
 proxies:
+  - {name: "[SS] 乌克兰 V2CROSS.COM", server: 2.59.163.104, port: 2222, type: ss, cipher: chacha20-ietf-poly1305, password: qscavF5UviIL-8V-E4raBA, udp: true, tfo: false}
+  - {name: "[VMess] 浙江省丽水市 移动", server: 183.249.207.249, port: 40180, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, skip-cert-verify: true, udp: true, tfo: false}
   - {name: "[VMess] 🇨🇦 _CA_加拿大", server: 108.181.10.17, port: 80, type: vmess, uuid: 474e8680-701f-11ee-b436-205c6d5f5d78, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true, tfo: false}
   - {name: "[SS] 🇨🇭 _CH_瑞士", server: 84.17.53.163, port: 80, type: ss, cipher: aes-256-cfb, password: asdKkaskJKfnsa, udp: true, tfo: false}
   - {name: "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国", server: 107.167.182.230, port: 80, type: vmess, uuid: efcb7d7c-c582-46f5-eeff-0e553342528d, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /tg@hkaa0}, udp: true, tfo: false}
@@ -27,11 +29,9 @@ proxies:
   - {name: "[VMess] 🇺🇸 _US_美国_3", server: 45.199.138.186, port: 30000, type: vmess, uuid: 4ec0ae62-de09-4029-904a-0313d4628ecf, alterId: 64, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /path/1696682720138}, udp: true, tfo: false}
   - {name: "[VMess] 🇺🇸 _US_美国_4", server: wnd3.shabijichang.com, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: wnd3.shabijichang.com}}, udp: true, tfo: false}
   - {name: "[VMess] 🇺🇸 _US_美国_5", server: 104.21.75.246, port: 80, type: vmess, uuid: c458695d-6908-45c3-9512-e0c46418454c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /}, udp: true, tfo: false}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: nyl.988978.xyz, port: 443, type: vmess, uuid: 40af0e14-03c8-45eb-85f3-d2e688ddab4a, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /40af0e14-03c8-45eb-85f3-d2e688ddab4a, headers: {Host: nyl.988978.xyz}}, udp: true, tfo: false}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点", server: 2112e4.7d79233c.shop, port: 80, type: vmess, uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk01s.7d79233c.shop}}, udp: true, tfo: false}
   - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 2", server: 141.101.113.6, port: 443, type: vmess, uuid: 8f74ec8a-971c-11ed-a8fc-0242ac120002, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: "/920f9840-4d0f-11f0-a948-6a75f667b472?ed=2048", headers: {Host: 920f9840-4d0f-11f0-a948-6a75f667b472.ShomaParvazRoYadetonNist-BypassIsHere.lat}}, udp: true, tfo: false}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 3", server: 2112e4.7d79233c.shop, port: 80, type: vmess, uuid: 952797b6-21a0-4e66-9239-30ef5c0efcdf, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: hk01s.7d79233c.shop}}, udp: true, tfo: false}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 4", server: 104.17.121.140, port: 8443, type: vmess, uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg-innocent-adjust-shape.trycloudflare.com}}, udp: true, tfo: false}
-  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 5", server: s2.cn-db.top, port: 8880, type: vmess, uuid: 82ff3066-1fbd-3dd2-9b15-7c46a865317c, alterId: 0, cipher: auto, tls: false, skip-cert-verify: true, network: ws, ws-opts: {path: /dabai.in172.67.69.28, headers: {Host: 100-114-171-163.s2.cn-db.top}}, udp: true, tfo: false}
+  - {name: "[VMess] 🇺🇸 美国 CloudFlare节点 3", server: 104.17.121.140, port: 8443, type: vmess, uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708, alterId: 0, cipher: auto, tls: true, skip-cert-verify: true, network: ws, ws-opts: {path: /, headers: {Host: mg-innocent-adjust-shape.trycloudflare.com}}, udp: true, tfo: false}
 proxy-groups:
   - name: 🚀 全球互联
     type: select
@@ -45,6 +45,8 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
+      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[VMess] 浙江省丽水市 移动"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
@@ -67,8 +69,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 5"
   - name: 🎥 Netflix
     type: select
     proxies:
@@ -77,6 +77,8 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
+      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[VMess] 浙江省丽水市 移动"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
@@ -99,8 +101,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 5"
   - name: 📹 Youtube
     type: select
     proxies:
@@ -109,6 +109,8 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
+      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[VMess] 浙江省丽水市 移动"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
@@ -131,8 +133,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 5"
   - name: ▶️ Disney+
     type: select
     proxies:
@@ -141,6 +141,8 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
+      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[VMess] 浙江省丽水市 移动"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
@@ -163,8 +165,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 5"
   - name: 🌍 国外媒体
     type: select
     proxies:
@@ -174,6 +174,8 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
+      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[VMess] 浙江省丽水市 移动"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
@@ -196,8 +198,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 5"
   - name: 📲 Telegram
     type: select
     proxies:
@@ -221,6 +221,8 @@ proxy-groups:
       - 🇺🇲 美国
       - 🇹🇼 台湾
       - 🇸🇬 新加坡
+      - "[SS] 乌克兰 V2CROSS.COM"
+      - "[VMess] 浙江省丽水市 移动"
       - "[VMess] 🇨🇦 _CA_加拿大"
       - "[SS] 🇨🇭 _CH_瑞士"
       - "[VMess] 🇨🇳 _TW_台湾->🇺🇸_US_美国"
@@ -243,8 +245,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 5"
   - name: 🇭🇰 香港
     type: select
     proxies:
@@ -274,8 +274,6 @@ proxy-groups:
       - "[VMess] 🇺🇸 美国 CloudFlare节点"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 2"
       - "[VMess] 🇺🇸 美国 CloudFlare节点 3"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 4"
-      - "[VMess] 🇺🇸 美国 CloudFlare节点 5"
   - name: 🇹🇼 台湾
     type: select
     proxies:
